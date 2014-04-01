@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Space Game Engine">
+</Property><Property Name="Solution File" Value="D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine.sln">
+</Property><Property Name="User Options File" Value="D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine.suo">
+</Property><Property Name="Date" Value="Sunday, January 09, 2011">
+</Property><Property Name="Time" Value="14:07 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Space Game Engine.sln" Description="File successfully backed up as D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Space Game Engine.suo" Description="File successfully backed up as D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine.suo.old">
+</Event><Event ErrorLevel="0" Project="Space Game Engine" Source="Space Game Engine\Space Game Engine.vcproj" Description="Converting project file 'D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine\Space Game Engine.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Space Game Engine" Source="Space Game Engine\Space Game Engine.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Space Game Engine" Source="Space Game Engine\Space Game Engine.vcproj" Description="Done converting to new project file 'D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine\Space Game Engine.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Space Game Engine" Source="Space Game Engine\Space Game Engine.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Space Game Engine.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Space Game Engine.sln" Description="Converted">
+</Event></UpgradeLog>

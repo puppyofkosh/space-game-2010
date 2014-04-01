@@ -1,0 +1,129 @@
+//SetupGLUT.cpp is located in the folder "Game Class"
+//GameClass.h is also located in "Game Class"
+//Since they are in the same folder, we do not need to have
+//include "Game Class/GameClass.h"
+//whereas in main.cpp and other files outside of the Game Class folder, we do.
+#ifdef __APPLE__
+#include <OpenGL/OpenGL.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#define NO_VBOS
+#endif
+#ifdef _WIN32
+#include <windows.h> // these two header files are needed to compile a program in OpenGL with GLUT
+#include <GL/glut.h>
+#include <GL/glu.h>
+#include <GL/gl.h>
+#endif
+#ifdef __linux__
+#include <GL/glut.h>
+#include <GL/glu.h>
+#include <GL/gl.h>
+#define NO_VBOS
+#endif
+
+#include "GameClass.h"
+#include "../Space Object Class/SpaceObjectClass.h"
+
+#include "../Display.h"//Display.h is in the folder above "Game Class", so the ../ is necessary.
+#include "../Reshape.h"
+#include "../Idle.h"
+#include "../End.h"
+#include "../KeyboardInput.h"
+#include "../KeyboardSpecialInput.h"
+
+#include <stdlib.h>
+
+#include <iostream>
+#include <string>
+#include <sstream>
+
+#include "../VBO/VBOExtend.h"
+#include "../ExtensionSupport.h"
+
+
+void Game::setup(int argc, char** argv)//setup GLUT
+{
+	using std::endl;
+
+	std::cout << "Initializing OpenGL Rendering Context" << endl;
+	glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);   // display mode. 
+												   //GLUT_DOUBLE is a MUST because otherwise you'll get flickering
+
+	//Get the screen width and height
+	screenWidth = glutGet (GLUT_SCREEN_WIDTH);
+	screenHeight = glutGet (GLUT_SCREEN_HEIGHT);
+
+	std::string gameModeString;//For fullscreen
+	std::stringstream out;//For changing gameModeString
+	
+	//This saves the res and colour depth to the gameModeString
+	out << screenWidth;
+	gameModeString += out.str();
+	gameModeString += 'x';
+	out << screenHeight;
+	gameModeString += out.str();
+	gameModeString += ":32";//We're just assuming you're gonna use 32 bit colour here...
+	//gameModeString now has the value xResolutionxyResolution:32
+
+	//gameModeString = "800x600:32";
+
+	std::cout << "Setting up fullscreen mode" << endl;
+	glutGameModeString (gameModeString.c_str());//When we enter game mode (fullscreen) it's gonna use the above settings	
+	glutEnterGameMode();
+
+	glutSetCursor (GLUT_CURSOR_NONE);//Hide the mouse
+
+	std::cout << "Setting up OpenGL callbacks" << endl;
+	glutDisplayFunc(display);
+    glutReshapeFunc(reshape);//when the screen is resized
+	glutIdleFunc (idle);//when opengl is not rendering (use this to update things)
+	atexit (end);//Is called right before the program closes. Deallocate everything.
+	glutKeyboardFunc (keyboardIn);//When a key has been pressed
+	glutKeyboardUpFunc (keyboardUp);//When it's been released
+	glutSpecialFunc (keyboardSpecialIn);//When a "special" key has been pressed
+	glutSpecialUpFunc (keyboardSpecialUp);//When a "special" key has been released.
+
+
+	//enables
+	glEnable(GL_TEXTURE_2D);
+
+
+	std::cout << "Initializing VBOs. Hold your breath." << endl;
+	//VBO setup
+    #ifdef _WIN32
+	int g_fVBOSupported = IsExtensionSupported( "GL_ARB_vertex_buffer_object" );
+	if( g_fVBOSupported )
+	{
+		std::cout << "VBOs should work on this computer!" << endl;
+		#ifdef _WIN32
+			// Get Pointers To The GL Functions
+			glGenBuffersARB = (PFNGLGENBUFFERSARBPROC) wglGetProcAddress("glGenBuffersARB");
+			glBindBufferARB = (PFNGLBINDBUFFERARBPROC) wglGetProcAddress("glBindBufferARB");
+			glBufferDataARB = (PFNGLBUFFERDATAARBPROC) wglGetProcAddress("glBufferDataARB");
+			glDeleteBuffersARB = (PFNGLDELETEBUFFERSARBPROC) wglGetProcAddress("glDeleteBuffersARB");
+			glGetBufferParameterivARB = (PFNGLGETBUFFERPARAMETERIVARBPROC)wglGetProcAddress("glGetBufferParameterivARB");
+			glMapBufferARB = (PFNGLMAPBUFFERARBPROC)wglGetProcAddress("glMapBufferARB");
+			glUnmapBufferARB = (PFNGLUNMAPBUFFERARBPROC)wglGetProcAddress("glUnmapBufferARB");
+			glBufferSubDataARB = (PFNGLBUFFERSUBDATAARBPROC)wglGetProcAddress("glBufferSubDataARB");
+		#endif
+	}
+	else//VBOS won't work, they aren't supported.
+	{
+		std::cout << "VBO's will not work on this computer. Find a decent graphics card." << endl;
+		g_fVBOSupported = false;
+	}
+		#ifdef _WIN32
+		glClientActiveTexture = (PFNGLCLIENTACTIVETEXTUREPROC) wglGetProcAddress("glClientActiveTexture");
+		#endif
+
+#endif
+
+	glLoadIdentity ();  
+	glOrtho (0, screenWidth, screenHeight, 0, -1.0, 1.0); // sets up “graph paper” for you to draw on. The top left hand coordinate
+															//is 0, 0
+	glClearColor (0, 0, 0, 0);
+
+	std::cout << "OpenGL setup complete." << endl;
+}

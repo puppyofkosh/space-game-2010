@@ -1,0 +1,276 @@
+#include "Game Class/GameClass.h"
+
+#include "Space Object Class/SpaceObjectClass.h"
+
+#include "ImageLoad.h"
+
+#include <time.h>
+
+#ifdef __APPLE__
+#include <GLUT/GLUT.h>
+#else
+#include <GL/glut.h>
+#endif
+
+#include <iostream>
+
+#include "Background Star Class/BackgroundStarClass.h"
+
+#include "List Class/List Item Class/ListItemClass.h"
+#include "List Class/List Item Class/ListItemChildren.h"
+
+
+int main(int argc, char** argv)
+{
+	game = new Game();
+
+	game->gameMode = game->SPACE;
+
+	game->setup(argc, argv);//setup opengl and stuff
+
+	game->initObjects();//initialize the objects. Stars, the ship, etc
+
+	game->speedThresholdDrive = 100;//The maximum speed the ship can go before it slows down 
+									//(player ship included) while using the drive
+	game->speedThresholdThruster = 25;//Max speed the ship can go on thrusters
+
+	game->part.engine.push_back (new Engine ("The choo choo engine", 100, 500, 1));
+	game->part.engine.push_back (new Engine ("The slightly less bad engine", 150, 10000, 1));
+
+	game->part.cargoBay.push_back (new CargoBay ("The 100 Ton Bay", 250, 100));
+	game->part.cargoBay.push_back (new CargoBay ("The 150 Ton Bay", 500, 150));
+
+	game->government.gov.push_back (new Government::Gov("playergov"));
+
+	game->player.ship.toggleEngine = game->player.ship.THRUSTERS;//use thrusters to start with
+	game->player.ship.maxFuel = 5000;
+	game->player.ship.fuel = game->player.ship.maxFuel;
+	game->player.money = 500;
+	game->player.ship.mass = 500;
+	game->player.government = game->government.gov[0];
+	
+	game->player.ship.maxHull = 5000;
+	game->player.ship.hull = game->player.ship.maxHull;
+	game->player.ship.setEngine (game->part.engine[0]);
+	game->player.ship.setCargoBay(game->part.cargoBay[0]);
+
+	game->sectorWidth = 500000;//Each sector will be 50,000 units wide/long
+	game->sectorHeight = 500000;
+
+	game->msForFrame = 15;
+	game->idleTimer = 16;
+
+	game->fuelPrice = .1;//Set the cost of fuel
+
+	game->pauseMenu.pauseMenuList.init (10, 10);
+	//Add new items to the list
+	game->pauseMenu.pauseMenuList.item.push_back (new ListItem("Welcome to the pause menu", 0));
+	game->pauseMenu.pauseMenuList.item.push_back (new ListItemLoad("Press l to load a saved game"));
+	game->pauseMenu.pauseMenuList.item.push_back (new ListItemSave("Press s to save this game"));
+	game->pauseMenu.pauseMenuList.item.push_back (new ListItemQuit("Press q to quit"));
+
+	game->landMenu.choice.init (10, 10);
+	game->landMenu.choice.add (new ListItem("Welcome to the land menu", 0));
+	game->landMenu.choice.add (new ListItemRefuel("Refill fuel"));
+	game->landMenu.choice.add (new ListItemRepair("Repair Hull"));
+	game->landMenu.choice.add (new ListItemTogglePartList("View available ship components"));
+	game->landMenu.choice.add (new ListItemToggleSellCargoList ("Sell some cargo"));
+
+	game->landMenu.choice.add (new ListItemTradeMission ("Set up trade mission"));
+	//game->landMenu.tradeMissionPlace = game->landMenu.choice.item.size()-1;
+
+	game->landMenu.availableParts.init (350, 10);
+	game->landMenu.sellableCargo.init (350, 10);
+
+
+
+#ifdef __APPLE__
+	game->map.init ("../../Source/Resources/2D/Blank.tga", 1);
+	game->map.initBackground ("../../Source/Resources/2D/Map.tga");
+#endif
+#ifdef _WIN32
+	game->map.init ("..//Space Game Engine//Source//Resources//2D//Blank.tga", 0);
+	game->map.initBackground ("..//Space Game Engine//Source//Resources//2D//Map.tga", 1, game->screenWidth, game->screenHeight);
+#endif
+#ifdef __linux__
+	game->map.init ("..//Space Game Engine//Source//Resources//2D//Blank.tga", 0);
+	game->map.initBackground ("..//Space Game Engine//Source//Resources//2D//Map.tga", 1, game->screenWidth, game->screenHeight);
+#endif
+
+	game->map.xCenter = game->screenWidth/2;
+	game->map.yCenter = game->screenHeight/2;
+
+	//set up the arial font
+#ifdef __APPLE__
+	game->arial10.init("arial", "../../Source/Resources/2D/Fonts/Arial10", 10, 10);
+#else
+	game->arial10.init("arial", "../Space Game Engine/Source/Resources/2D/Fonts/Arial10", 10, 10);
+#endif
+	#ifdef __APPLE__
+		game->hud.controlPanelBackground.init ("../../Source/Resources/2D/ControlPanelBackground.tga", 1);
+	#endif
+	#ifdef _WIN32
+		game->hud.controlPanelBackground.init ("../Space Game Engine/Source/Resources/2D/ControlPanelBackground.tga", 1);
+	#endif
+#ifdef __linux__
+	game->hud.controlPanelBackground.init ("../Space Game Engine/Source/Resources/2D/ControlPanelBackground.tga", 1);
+#endif
+	game->hud.controlPanelBackground.xPos = game->screenWidth/2;
+	game->hud.controlPanelBackground.yPos = game->screenHeight - game->hud.controlPanelBackground.height/2;
+	
+	//the object which checks if "t" has been pressed. if so, switch to drive/thrusters
+	#ifdef __APPLE__
+		game->hud.toggleEngine.init ("../../Source/Resources/2D/ControlPanelToggleEngine.tga", 1);
+	#endif
+	#ifdef _WIN32
+		game->hud.toggleEngine.init ("../Space Game Engine/Source/Resources/2D/ControlPanelToggleEngine.tga", 1);
+	#endif
+#ifdef __linux__
+	game->hud.toggleEngine.init ("../Space Game Engine/Source/Resources/2D/ControlPanelToggleEngine.tga", 1);
+#endif
+	game->hud.toggleEngine.keyValue = int ('t');
+	//position it towards the center of the ctrl panel
+	game->hud.toggleEngine.xPos = game->screenWidth/2 - game->hud.toggleEngine.width;
+	game->hud.toggleEngine.yPos = game->screenHeight - game->hud.controlPanelBackground.height/2;
+
+#ifdef __APPLE__
+	game->hud.toggleMap.init ("../../Source/Resources/2D/ControlPanelToggleMap.tga", 0);
+#endif
+#ifdef _WIN32
+	game->hud.toggleMap.init ("../Space Game Engine/Source/Resources/2D/ControlPanelToggleMap.tga", true);
+#endif
+#ifdef __linux__
+	game->hud.toggleMap.init ("../Space Game Engine/Source/Resources/2D/ControlPanelToggleMap.tga", 0);
+#endif
+
+	game->hud.toggleMap.keyValue = int('m');
+	game->hud.toggleMap.xPos = game->hud.controlPanelBackground.xPos + 15;
+	game->hud.toggleMap.yPos = game->screenHeight - game->hud.controlPanelBackground.height/2;
+
+	#ifdef __APPLE__
+	game->hud.landButton.init ("../../Source/Resources/2D/LandButton.tga", 1);
+	#endif	
+	
+	#ifdef _WIN32
+	game->hud.landButton.init ("../Space Game Engine/Source/Resources/2D/LandButton.tga", 1);
+	#endif
+
+	#ifdef __linux__
+	game->hud.landButton.init ("../Space Game Engine/Source/Resources/2D/LandButton.tga", 1);
+	#endif
+
+	game->hud.landButton.keyValue = int ('l');
+	game->hud.landButton.xPos = game->hud.controlPanelBackground.xPos + 160;
+	game->hud.landButton.yPos = game->screenHeight - game->hud.controlPanelBackground.height/2;
+
+	#ifdef __APPLE__
+		game->hud.radar.init("../../Source/Resources/2D/Blank.tga", 0);
+	#endif
+	
+	#ifdef _WIN32
+		game->hud.radar.init("../Space Game Engine/Source/Resources/2D/Blank.tga", 1);
+	#endif
+	
+#ifdef __linux__
+	game->hud.radar.init("../Space Game Engine/Source/Resources/2D/Blank.tga", 0);
+#endif
+	game->hud.radar.xCenter = game->screenWidth - (0.234*game->screenWidth)/2;
+	game->hud.radar.yCenter = game->screenHeight - (0.292*game->screenHeight)/2;
+	
+
+
+
+	#ifdef __APPLE__
+		game->hud.radar.initBackground ("../../Source/Resources/2D/Radar.tga", 1, .234*game->screenWidth, .292*game->screenHeight);
+	#endif
+
+	#ifdef _WIN32
+		game->hud.radar.initBackground ("../Space Game Engine/Source/Resources/2D/Radar.tga", 1, .234*game->screenWidth, .292*game->screenHeight);
+	#endif
+#ifdef __linux__
+	game->hud.radar.initBackground ("../Space Game Engine/Source/Resources/2D/Radar.tga", 1, .234*game->screenWidth, .292*game->screenHeight);
+#endif
+
+
+	/*#ifdef __APPLE__//if we're on osx
+		game->solarSystem[0].sun.init("../../Source/Resources/2D/Star.tga", 1);
+		game->solarSystem[1].sun.init("../../Source/Resources/2D/Star.tga", 1);
+		
+		game->solarSystem[0].planet[0].init ("../../Source/Resources/2D/Planet.tga", 1);
+		
+		game->solarSystem[1].planet[0].init ("../../Source/Resources/2D/Planet.tga", 1);
+		game->solarSystem[1].planet[1].init ("../../Source/Resources/2D//Planet.tga", 1);
+	#endif
+
+	#ifdef _WIN32
+		game->solarSystem[0].sun.init("..//Space Game Engine//Source//Resources//2D//Star.tga", 1);
+		game->solarSystem[1].sun.init("..//Space Game Engine//Source//Resources//2D//Star.tga", 1);
+		
+		game->solarSystem[0].planet[0].init ("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+		
+		game->solarSystem[1].planet[0].init ("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+		game->solarSystem[1].planet[1].init ("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+
+	#endif
+	
+#ifdef __linux__
+	game->solarSystem[0].sun.init("..//Space Game Engine//Source//Resources//2D//Star.tga", 1);
+	game->solarSystem[1].sun.init("..//Space Game Engine//Source//Resources//2D//Star.tga", 1);
+	
+	game->solarSystem[0].planet[0].init ("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+	
+	game->solarSystem[1].planet[0].init ("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+	game->solarSystem[1].planet[1].init ("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+	
+#endif*/
+
+	/*game->solarSystem[0].name = "THE BIG STAR";
+	game->solarSystem[0].sun.xPos = 0;
+	game->solarSystem[0].sun.yPos = 0;
+	game->solarSystem[0].planet[0].name = "PLANET X";
+	game->solarSystem[0].planet[0].xPos = 600;
+	game->solarSystem[0].planet[0].yPos = 600;
+	game->solarSystem[0].planet[0].rotationSpeed = 0.1;
+
+	game->solarSystem[1].name = "THE OTHER BIG STAR";
+	game->solarSystem[1].sun.xPos = 1200;
+	game->solarSystem[1].sun.yPos = 1000;
+	game->solarSystem[1].planet[0].name = "PLANET DRUIDIA";
+	game->solarSystem[1].planet[0].xPos = 1500;
+	game->solarSystem[1].planet[0].yPos = 1500;
+	game->solarSystem[1].planet[0].rotationSpeed = 0.2;
+	game->solarSystem[1].planet[1].name = "EARTH V2.0";
+	game->solarSystem[1].planet[1].xPos = 600;
+	game->solarSystem[1].planet[1].yPos = 800;
+	game->solarSystem[1].planet[1].rotationSpeed = 0.1;*/
+	//ALL OF IT
+
+	//This should be loaded from a file (or multiple files probly)
+	//All of the types of cargo
+	game->cargo.addCargoItem ("gold", 100);
+	game->cargo.addCargoItem ("silver", 75);
+	game->cargo.addCargoItem ("copper", 4);
+	game->cargo.addCargoItem ("rabbits", 18);
+
+	game->player.ship.getCargoBay()->addCargo (game->cargo.item[2], 15);
+	game->player.ship.getCargoBay()->addCargo (game->cargo.item[0], game->player.ship.getCargoBay()->spaceLeft);
+
+	//If we're on osx
+	#ifdef __APPLE__
+		game->player.ship.init ("../../Source/Resources/2D/Ship.tga", 1);
+	#endif
+	
+	#ifdef _WIN32
+		game->player.ship.init ("..//Space Game Engine//Source//Resources//2D//Ship.tga", 1);
+	#endif
+	#ifdef __linux__
+		game->player.ship.init ("..//Space Game Engine//Source//Resources//2D//Ship.tga", 1);
+	#endif
+
+	std::cout << "Generating universe...this could take a while.\n";
+	game->generateUniverse();
+
+	game->startGame();//begins the game. It will not return to main after this is called.
+
+
+}

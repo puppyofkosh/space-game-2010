@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Game Class">
+      <UniqueIdentifier>{901c62fe-2373-439c-9c29-68b86fb8a5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Space Object Class">
+      <UniqueIdentifier>{1dd851d5-5225-4d91-b94e-80b1011a4a22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VBO">
+      <UniqueIdentifier>{fbd06488-4f4e-4745-96d7-c21673faad4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player Class">
+      <UniqueIdentifier>{49177765-adfb-485d-9f5a-ac14635d0a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ship Class">
+      <UniqueIdentifier>{8b3b9686-6122-45f8-8c60-79e13b380069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Background Star Class">
+      <UniqueIdentifier>{15595a71-233a-4abe-aa7d-14cce7841b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Convert Special Keyboard Input">
+      <UniqueIdentifier>{36f93aa6-1e16-439d-90bd-fa16181da3a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Planet Class">
+      <UniqueIdentifier>{c2dcbd8b-9a76-43c3-888e-dd5c111c0853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Solar System Class">
+      <UniqueIdentifier>{83f584cf-4532-4814-97ce-c2253ea36bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Star Class">
+      <UniqueIdentifier>{7c31f56e-0cd8-4917-b80d-4521ecaa3d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Radar Class">
+      <UniqueIdentifier>{10e135d8-0900-4466-abe3-cdaf4ef9a64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HUD Class">
+      <UniqueIdentifier>{6d8ce537-def2-4ac1-aa38-139f720606c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Button Class">
+      <UniqueIdentifier>{1efb5004-ddc0-44fc-bc66-e5797cf2597c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Map Class">
+      <UniqueIdentifier>{011b0dce-4771-4839-a38c-50ec855c9203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pause Menu Class">
+      <UniqueIdentifier>{78cddf10-a072-4e8e-9a9c-173744b2a51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Font">
+      <UniqueIdentifier>{62c1a6a1-932a-44ba-ac93-9a4ee58230fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\List Class">
+      <UniqueIdentifier>{8c4c398a-cf66-42ea-b0a1-7a8d2069415c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\List Class\List Item Class">
+      <UniqueIdentifier>{6713e59a-3ef1-464a-99e9-690b6b86e72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Land Menu Class">
+      <UniqueIdentifier>{71e5492d-4db0-4886-abc7-4fa61c1a954b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Part Class">
+      <UniqueIdentifier>{7be090fa-a321-43b8-8a8e-098c67cba0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ship Part Class">
+      <UniqueIdentifier>{689d7697-13cf-4462-8f4c-70536a44c029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ship Part Class\Ship Part Children">
+      <UniqueIdentifier>{28769131-b0dd-4fa3-b7ee-8a174037646f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cargo Class">
+      <UniqueIdentifier>{40c914bc-5a88-4c52-aca7-09d6038befa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Trade Mission Class">
+      <UniqueIdentifier>{3b034ced-4c87-4fe8-ab79-52625d3fef06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Government Class">
+      <UniqueIdentifier>{34b21114-9920-4a0b-aba7-8a050249f884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sprite Class">
+      <UniqueIdentifier>{a47a16f5-8eac-4172-8b47-4a365528938b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Image Class">
+      <UniqueIdentifier>{c1b5275e-d644-4fec-a3fc-f4cd7d79cdfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Button Classes">
+      <UniqueIdentifier>{37ec4c17-24d5-4fad-932d-8ace1ac6df5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\List Class">
+      <UniqueIdentifier>{01146301-ffbf-4fac-a268-83674e009428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ship Part Class">
+      <UniqueIdentifier>{1234fc9f-2b9f-4b87-a024-e96a9dc0af6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ship Part Class\Part Class Children">
+      <UniqueIdentifier>{51839aae-a578-41e6-8664-43a536421997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\End.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ExtensionSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\GetFrameRate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Idle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KeyboardInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KeyboardSpecialInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Reshape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_DrawString.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_GenerateUniverse.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_HandleKeyboardInput.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_HandleSpecialKeyboardInput.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_InitObjects.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_LimitFramerate.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game_loadTexture.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_Setup.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\Game_StartGame.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game Class\GameClass.cpp">
+      <Filter>Source Files\Game Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Space Object Class\SpaceObject_Draw.cpp">
+      <Filter>Source Files\Space Object Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Space Object Class\SpaceObject_Init.cpp">
+      <Filter>Source Files\Space Object Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Space Object Class\SpaceObject_Update.cpp">
+      <Filter>Source Files\Space Object Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Space Object Class\SpaceObjectClass.cpp">
+      <Filter>Source Files\Space Object Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\VBO\VBOExtend.cpp">
+      <Filter>Source Files\VBO</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player Class\Player_SetTradeMission.cpp">
+      <Filter>Source Files\Player Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player Class\Player_Update.cpp">
+      <Filter>Source Files\Player Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player Class\PlayerClass.cpp">
+      <Filter>Source Files\Player Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ship Class\ShipClass.cpp">
+      <Filter>Source Files\Ship Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Background Star Class\BackgroundStar_Draw.cpp">
+      <Filter>Source Files\Background Star Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Background Star Class\BackgroundStar_Init.cpp">
+      <Filter>Source Files\Background Star Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Background Star Class\BackgroundStar_Update.cpp">
+      <Filter>Source Files\Background Star Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Background Star Class\BackgroundStarClass.cpp">
+      <Filter>Source Files\Background Star Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp">
+      <Filter>Source Files\Convert Special Keyboard Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp">
+      <Filter>Source Files\Convert Special Keyboard Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInput_Init.cpp">
+      <Filter>Source Files\Convert Special Keyboard Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInputClass.cpp">
+      <Filter>Source Files\Convert Special Keyboard Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Planet Class\Planet_Update.cpp">
+      <Filter>Source Files\Planet Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Planet Class\PlanetClass.cpp">
+      <Filter>Source Files\Planet Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Solar System Class\SolarSystemClass.cpp">
+      <Filter>Source Files\Solar System Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Star Class\StarClass.cpp">
+      <Filter>Source Files\Star Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Radar Class\Radar_Draw.cpp">
+      <Filter>Source Files\Radar Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Radar Class\Radar_DrawBackground.cpp">
+      <Filter>Source Files\Radar Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Radar Class\Radar_InitBackground.cpp">
+      <Filter>Source Files\Radar Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Radar Class\RadarClass.cpp">
+      <Filter>Source Files\Radar Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HUD Class\HUD_Draw.cpp">
+      <Filter>Source Files\HUD Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HUD Class\HUDClass.cpp">
+      <Filter>Source Files\HUD Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Button Class\Button_Activate.cpp">
+      <Filter>Source Files\Button Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Button Class\Button_Update.cpp">
+      <Filter>Source Files\Button Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Button Class\ButtonClass.cpp">
+      <Filter>Source Files\Button Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Button Class\ButtonClassChildren.cpp">
+      <Filter>Source Files\Button Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Map Class\Map_Draw.cpp">
+      <Filter>Source Files\Map Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Map Class\Map_DrawElement.cpp">
+      <Filter>Source Files\Map Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Map Class\MapClass.cpp">
+      <Filter>Source Files\Map Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pause Menu Class\PauseMenu_Draw.cpp">
+      <Filter>Source Files\Pause Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pause Menu Class\PauseMenu_Load.cpp">
+      <Filter>Source Files\Pause Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pause Menu Class\PauseMenu_Save.cpp">
+      <Filter>Source Files\Pause Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pause Menu Class\PauseMenu_Update.cpp">
+      <Filter>Source Files\Pause Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pause Menu Class\PauseMenuClass.cpp">
+      <Filter>Source Files\Pause Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Font Class\Font_DrawString.cpp">
+      <Filter>Source Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Font Class\Font_Init.cpp">
+      <Filter>Source Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Font Class\FontClass.cpp">
+      <Filter>Source Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List_Add.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List_Clear.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List_Draw.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List_Init.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List_Remove.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List_Update.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\ListClass.cpp">
+      <Filter>Source Files\List Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List Item Class\ListItemChildren.cpp">
+      <Filter>Source Files\List Class\List Item Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\List Class\List Item Class\ListItemClass.cpp">
+      <Filter>Source Files\List Class\List Item Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Land Menu Class\LandMenu_Setup.cpp">
+      <Filter>Source Files\Land Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Land Menu Class\LandMenuClass.cpp">
+      <Filter>Source Files\Land Menu Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Part Class\PartClass.cpp">
+      <Filter>Source Files\Part Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ship Part Class\ShipPart_Gets.cpp">
+      <Filter>Source Files\Ship Part Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ship Part Class\ShipPartClass.cpp">
+      <Filter>Source Files\Ship Part Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ship Part Class\ShipPartChildren.cpp">
+      <Filter>Source Files\Ship Part Class\Ship Part Children</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Cargo Class\CargoClass.cpp">
+      <Filter>Source Files\Cargo Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Trade Mission Class\TradeMission_SetMission.cpp">
+      <Filter>Source Files\Trade Mission Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Government Class\Government_AddPlanet.cpp">
+      <Filter>Source Files\Government Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Government Class\Government_RemoveGovernment.cpp">
+      <Filter>Source Files\Government Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Government Class\Government_RemovePlanet.cpp">
+      <Filter>Source Files\Government Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Government Class\GovernmentClass.cpp">
+      <Filter>Source Files\Government Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TGAImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Background Star Class\BackgroundStarClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Cargo Class\CargoClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInputClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\End.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ExtensionSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Font Class\FontClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game Class\GameClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Government Class\GovernmentClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HUD Class\HUDClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Idle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Image Class\ImageClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\KeyboardInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\KeyboardSpecialInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Land Menu Class\LandMenuClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Map Class\MapClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Part Class\PartClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pause Menu Class\PauseMenuClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Planet Class\PlanetClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Player Class\PlayerClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Radar Class\RadarClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Reshape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Ship Class\ShipClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Solar System Class\SolarSystemClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Space Object Class\SpaceObjectClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Star Class\StarClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Trade Mission Class\TradeMissionClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VBO\VBOExtend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Button Class\ButtonClass.h">
+      <Filter>Header Files\Button Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Button Class\ButtonClassChildren.h">
+      <Filter>Header Files\Button Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\List Class\ListClass.h">
+      <Filter>Header Files\List Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\List Class\List Item Class\ListItemChildren.h">
+      <Filter>Header Files\List Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\List Class\List Item Class\ListItemClass.h">
+      <Filter>Header Files\List Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Ship Part Class\ShipPartClass.h">
+      <Filter>Header Files\Ship Part Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Ship Part Class\ShipPartChildren.h">
+      <Filter>Header Files\Ship Part Class\Part Class Children</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TGAImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

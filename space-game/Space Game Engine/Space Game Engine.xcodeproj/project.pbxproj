@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D9F5B4B123528D9007DE26F /* Font_DrawString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F5B47123528D9007DE26F /* Font_DrawString.cpp */; };
+		6D9F5B4C123528D9007DE26F /* Font_Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F5B48123528D9007DE26F /* Font_Init.cpp */; };
+		6D9F5B4D123528D9007DE26F /* FontClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F5B49123528D9007DE26F /* FontClass.cpp */; };
+		6D9F5B531235291E007DE26F /* PauseMenu_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F5B521235291E007DE26F /* PauseMenu_Update.cpp */; };
+		8DD76F6A0486A84900D96B5E /* Space Game Engine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Space Game Engine.1 */; };
+		FA081B56121DC19800E762A6 /* Game_InitObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA081B55121DC19800E762A6 /* Game_InitObjects.cpp */; };
+		FA081B5D121DC1B400E762A6 /* Radar_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA081B58121DC1B400E762A6 /* Radar_Draw.cpp */; };
+		FA081B5E121DC1B400E762A6 /* Radar_DrawBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA081B59121DC1B400E762A6 /* Radar_DrawBackground.cpp */; };
+		FA081B5F121DC1B400E762A6 /* Radar_InitBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA081B5A121DC1B400E762A6 /* Radar_InitBackground.cpp */; };
+		FA081B60121DC1B400E762A6 /* RadarClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA081B5B121DC1B400E762A6 /* RadarClass.cpp */; };
+		FA225A771242D76600D36176 /* ListItemChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A6D1242D76600D36176 /* ListItemChildren.cpp */; };
+		FA225A781242D76600D36176 /* ListItemClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A6F1242D76600D36176 /* ListItemClass.cpp */; };
+		FA225A791242D76600D36176 /* List_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A711242D76600D36176 /* List_Draw.cpp */; };
+		FA225A7A1242D76600D36176 /* List_Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A721242D76600D36176 /* List_Init.cpp */; };
+		FA225A7B1242D76600D36176 /* List_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A731242D76600D36176 /* List_Update.cpp */; };
+		FA225A7C1242D76600D36176 /* ListClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A741242D76600D36176 /* ListClass.cpp */; };
+		FA225A7D1242D76600D36176 /* ListItemChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A761242D76600D36176 /* ListItemChildren.cpp */; };
+		FA225A801242D7A500D36176 /* ButtonClassChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A7E1242D7A500D36176 /* ButtonClassChildren.cpp */; };
+		FA225A851242D7C200D36176 /* SolarSystemClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA225A831242D7C200D36176 /* SolarSystemClass.cpp */; };
+		FA36A19A1219D52F00FCE7BA /* BackgroundStar_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1601219D52F00FCE7BA /* BackgroundStar_Draw.cpp */; };
+		FA36A19B1219D52F00FCE7BA /* BackgroundStar_Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1611219D52F00FCE7BA /* BackgroundStar_Init.cpp */; };
+		FA36A19C1219D52F00FCE7BA /* BackgroundStar_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1621219D52F00FCE7BA /* BackgroundStar_Update.cpp */; };
+		FA36A19D1219D52F00FCE7BA /* BackgroundStarClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1631219D52F00FCE7BA /* BackgroundStarClass.cpp */; };
+		FA36A19E1219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1661219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp */; };
+		FA36A19F1219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1671219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp */; };
+		FA36A1A01219D52F00FCE7BA /* ConvertSpecialKeyboardInput_Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1681219D52F00FCE7BA /* ConvertSpecialKeyboardInput_Init.cpp */; };
+		FA36A1A11219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1691219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.cpp */; };
+		FA36A1A21219D52F00FCE7BA /* Display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A16B1219D52F00FCE7BA /* Display.cpp */; };
+		FA36A1A31219D52F00FCE7BA /* End.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A16D1219D52F00FCE7BA /* End.cpp */; };
+		FA36A1A41219D52F00FCE7BA /* ExtensionSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A16F1219D52F00FCE7BA /* ExtensionSupport.cpp */; };
+		FA36A1A51219D52F00FCE7BA /* Game_HandleKeyboardInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1721219D52F00FCE7BA /* Game_HandleKeyboardInput.cpp */; };
+		FA36A1A61219D52F00FCE7BA /* Game_HandleSpecialKeyboardInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1731219D52F00FCE7BA /* Game_HandleSpecialKeyboardInput.cpp */; };
+		FA36A1A71219D52F00FCE7BA /* Game_LimitFramerate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1741219D52F00FCE7BA /* Game_LimitFramerate.cpp */; };
+		FA36A1A81219D52F00FCE7BA /* Game_Setup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1751219D52F00FCE7BA /* Game_Setup.cpp */; };
+		FA36A1A91219D52F00FCE7BA /* Game_StartGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1761219D52F00FCE7BA /* Game_StartGame.cpp */; };
+		FA36A1AA1219D52F00FCE7BA /* GameClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1771219D52F00FCE7BA /* GameClass.cpp */; };
+		FA36A1AB1219D52F00FCE7BA /* GetFrameRate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1791219D52F00FCE7BA /* GetFrameRate.cpp */; };
+		FA36A1AC1219D52F00FCE7BA /* Game_loadTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A17A1219D52F00FCE7BA /* Game_loadTexture.cpp */; };
+		FA36A1AD1219D52F00FCE7BA /* Idle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A17B1219D52F00FCE7BA /* Idle.cpp */; };
+		FA36A1AE1219D52F00FCE7BA /* ImageLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A17D1219D52F00FCE7BA /* ImageLoad.cpp */; };
+		FA36A1AF1219D52F00FCE7BA /* KeyboardInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A17F1219D52F00FCE7BA /* KeyboardInput.cpp */; };
+		FA36A1B01219D52F00FCE7BA /* KeyboardSpecialInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1811219D52F00FCE7BA /* KeyboardSpecialInput.cpp */; };
+		FA36A1B11219D52F00FCE7BA /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1831219D52F00FCE7BA /* Main.cpp */; };
+		FA36A1B21219D52F00FCE7BA /* Player_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1851219D52F00FCE7BA /* Player_Update.cpp */; };
+		FA36A1B31219D52F00FCE7BA /* PlayerClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1861219D52F00FCE7BA /* PlayerClass.cpp */; };
+		FA36A1B41219D52F00FCE7BA /* Reshape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1881219D52F00FCE7BA /* Reshape.cpp */; };
+		FA36A1B51219D52F00FCE7BA /* ShipClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A18F1219D52F00FCE7BA /* ShipClass.cpp */; };
+		FA36A1B61219D52F00FCE7BA /* SpaceObject_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1921219D52F00FCE7BA /* SpaceObject_Draw.cpp */; };
+		FA36A1B71219D52F00FCE7BA /* SpaceObject_Init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1931219D52F00FCE7BA /* SpaceObject_Init.cpp */; };
+		FA36A1B81219D52F00FCE7BA /* SpaceObject_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1941219D52F00FCE7BA /* SpaceObject_Update.cpp */; };
+		FA36A1B91219D52F00FCE7BA /* SpaceObjectClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1951219D52F00FCE7BA /* SpaceObjectClass.cpp */; };
+		FA36A1BA1219D52F00FCE7BA /* VBOExtend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA36A1981219D52F00FCE7BA /* VBOExtend.cpp */; };
+		FA36A1BF1219D54A00FCE7BA /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA36A1BE1219D54A00FCE7BA /* GLUT.framework */; };
+		FA36A1C31219D55200FCE7BA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA36A1C21219D55200FCE7BA /* OpenGL.framework */; };
+		FA79CBE41220B3CE00A85D92 /* Button_Activate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CBDC1220B3CE00A85D92 /* Button_Activate.cpp */; };
+		FA79CBE51220B3CE00A85D92 /* Button_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CBDD1220B3CE00A85D92 /* Button_Update.cpp */; };
+		FA79CBE61220B3CE00A85D92 /* ButtonClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CBDE1220B3CE00A85D92 /* ButtonClass.cpp */; };
+		FA79CBE71220B3CE00A85D92 /* ToggleEngine_Activate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CBE11220B3CE00A85D92 /* ToggleEngine_Activate.cpp */; };
+		FA79CBE81220B3CE00A85D92 /* ToggleEngineClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CBE21220B3CE00A85D92 /* ToggleEngineClass.cpp */; };
+		FA79CC0E1220B7E800A85D92 /* HUD_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CC0B1220B7E800A85D92 /* HUD_Draw.cpp */; };
+		FA79CC0F1220B7E800A85D92 /* HUDClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA79CC0C1220B7E800A85D92 /* HUDClass.cpp */; };
+		FA827002122C1F6600398BB4 /* PauseMenuClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA827001122C1F6600398BB4 /* PauseMenuClass.cpp */; };
+		FA827004122C1FD300398BB4 /* PauseMenu_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA827003122C1FD300398BB4 /* PauseMenu_Draw.cpp */; };
+		FA847F8D1228685600B1645A /* Game_DrawString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA847F8C1228685600B1645A /* Game_DrawString.cpp */; };
+		FAAAD953122C766E001F9FA3 /* ToggleMap_Activate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD950122C766E001F9FA3 /* ToggleMap_Activate.cpp */; };
+		FAAAD954122C766E001F9FA3 /* ToggleMapClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD951122C766E001F9FA3 /* ToggleMapClass.cpp */; };
+		FAAAD970122C9493001F9FA3 /* PauseMenu_Save.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD96F122C9493001F9FA3 /* PauseMenu_Save.cpp */; };
+		FAAAD972122C94A0001F9FA3 /* PauseMenu_Load.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAAAD971122C94A0001F9FA3 /* PauseMenu_Load.cpp */; };
+		FAD85BB612275356000422B1 /* Map_Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAD85BB312275356000422B1 /* Map_Draw.cpp */; };
+		FAD85BB712275356000422B1 /* MapClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAD85BB412275356000422B1 /* MapClass.cpp */; };
+		FAF88E3F121EFA910077F6D6 /* PlanetClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF88E3D121EFA910077F6D6 /* PlanetClass.cpp */; };
+		FAF88E54121EFDAB0077F6D6 /* Planet_Update.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF88E53121EFDAB0077F6D6 /* Planet_Update.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* Space Game Engine.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D9F5B47123528D9007DE26F /* Font_DrawString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Font_DrawString.cpp; path = "Source/Font Class/Font_DrawString.cpp"; sourceTree = "<group>"; };
+		6D9F5B48123528D9007DE26F /* Font_Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Font_Init.cpp; path = "Source/Font Class/Font_Init.cpp"; sourceTree = "<group>"; };
+		6D9F5B49123528D9007DE26F /* FontClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FontClass.cpp; path = "Source/Font Class/FontClass.cpp"; sourceTree = "<group>"; };
+		6D9F5B4A123528D9007DE26F /* FontClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FontClass.h; path = "Source/Font Class/FontClass.h"; sourceTree = "<group>"; };
+		6D9F5B521235291E007DE26F /* PauseMenu_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PauseMenu_Update.cpp; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* Space Game Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Space Game Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* Space Game Engine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "Space Game Engine.1"; sourceTree = "<group>"; };
+		FA081B55121DC19800E762A6 /* Game_InitObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_InitObjects.cpp; sourceTree = "<group>"; };
+		FA081B58121DC1B400E762A6 /* Radar_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Radar_Draw.cpp; sourceTree = "<group>"; };
+		FA081B59121DC1B400E762A6 /* Radar_DrawBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Radar_DrawBackground.cpp; sourceTree = "<group>"; };
+		FA081B5A121DC1B400E762A6 /* Radar_InitBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Radar_InitBackground.cpp; sourceTree = "<group>"; };
+		FA081B5B121DC1B400E762A6 /* RadarClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RadarClass.cpp; sourceTree = "<group>"; };
+		FA081B5C121DC1B400E762A6 /* RadarClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarClass.h; sourceTree = "<group>"; };
+		FA225A6D1242D76600D36176 /* ListItemChildren.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListItemChildren.cpp; sourceTree = "<group>"; };
+		FA225A6E1242D76600D36176 /* ListItemChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemChildren.h; sourceTree = "<group>"; };
+		FA225A6F1242D76600D36176 /* ListItemClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListItemClass.cpp; sourceTree = "<group>"; };
+		FA225A701242D76600D36176 /* ListItemClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemClass.h; sourceTree = "<group>"; };
+		FA225A711242D76600D36176 /* List_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List_Draw.cpp; sourceTree = "<group>"; };
+		FA225A721242D76600D36176 /* List_Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List_Init.cpp; sourceTree = "<group>"; };
+		FA225A731242D76600D36176 /* List_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List_Update.cpp; sourceTree = "<group>"; };
+		FA225A741242D76600D36176 /* ListClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListClass.cpp; sourceTree = "<group>"; };
+		FA225A751242D76600D36176 /* ListClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListClass.h; sourceTree = "<group>"; };
+		FA225A761242D76600D36176 /* ListItemChildren.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListItemChildren.cpp; sourceTree = "<group>"; };
+		FA225A7E1242D7A500D36176 /* ButtonClassChildren.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ButtonClassChildren.cpp; sourceTree = "<group>"; };
+		FA225A7F1242D7A500D36176 /* ButtonClassChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonClassChildren.h; sourceTree = "<group>"; };
+		FA225A831242D7C200D36176 /* SolarSystemClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SolarSystemClass.cpp; sourceTree = "<group>"; };
+		FA225A841242D7C200D36176 /* SolarSystemClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolarSystemClass.h; sourceTree = "<group>"; };
+		FA36A1601219D52F00FCE7BA /* BackgroundStar_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundStar_Draw.cpp; sourceTree = "<group>"; };
+		FA36A1611219D52F00FCE7BA /* BackgroundStar_Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundStar_Init.cpp; sourceTree = "<group>"; };
+		FA36A1621219D52F00FCE7BA /* BackgroundStar_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundStar_Update.cpp; sourceTree = "<group>"; };
+		FA36A1631219D52F00FCE7BA /* BackgroundStarClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundStarClass.cpp; sourceTree = "<group>"; };
+		FA36A1641219D52F00FCE7BA /* BackgroundStarClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundStarClass.h; sourceTree = "<group>"; };
+		FA36A1661219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp; sourceTree = "<group>"; };
+		FA36A1671219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp; sourceTree = "<group>"; };
+		FA36A1681219D52F00FCE7BA /* ConvertSpecialKeyboardInput_Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertSpecialKeyboardInput_Init.cpp; sourceTree = "<group>"; };
+		FA36A1691219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvertSpecialKeyboardInputClass.cpp; sourceTree = "<group>"; };
+		FA36A16A1219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertSpecialKeyboardInputClass.h; sourceTree = "<group>"; };
+		FA36A16B1219D52F00FCE7BA /* Display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Display.cpp; path = Source/Display.cpp; sourceTree = "<group>"; };
+		FA36A16C1219D52F00FCE7BA /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Display.h; path = Source/Display.h; sourceTree = "<group>"; };
+		FA36A16D1219D52F00FCE7BA /* End.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = End.cpp; path = Source/End.cpp; sourceTree = "<group>"; };
+		FA36A16E1219D52F00FCE7BA /* End.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = End.h; path = Source/End.h; sourceTree = "<group>"; };
+		FA36A16F1219D52F00FCE7BA /* ExtensionSupport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExtensionSupport.cpp; path = Source/ExtensionSupport.cpp; sourceTree = "<group>"; };
+		FA36A1701219D52F00FCE7BA /* ExtensionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtensionSupport.h; path = Source/ExtensionSupport.h; sourceTree = "<group>"; };
+		FA36A1721219D52F00FCE7BA /* Game_HandleKeyboardInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_HandleKeyboardInput.cpp; sourceTree = "<group>"; };
+		FA36A1731219D52F00FCE7BA /* Game_HandleSpecialKeyboardInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_HandleSpecialKeyboardInput.cpp; sourceTree = "<group>"; };
+		FA36A1741219D52F00FCE7BA /* Game_LimitFramerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_LimitFramerate.cpp; sourceTree = "<group>"; };
+		FA36A1751219D52F00FCE7BA /* Game_Setup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_Setup.cpp; sourceTree = "<group>"; };
+		FA36A1761219D52F00FCE7BA /* Game_StartGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_StartGame.cpp; sourceTree = "<group>"; };
+		FA36A1771219D52F00FCE7BA /* GameClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameClass.cpp; sourceTree = "<group>"; };
+		FA36A1781219D52F00FCE7BA /* GameClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameClass.h; sourceTree = "<group>"; };
+		FA36A1791219D52F00FCE7BA /* GetFrameRate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetFrameRate.cpp; sourceTree = "<group>"; };
+		FA36A17A1219D52F00FCE7BA /* Game_loadTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game_loadTexture.cpp; path = Source/Game_loadTexture.cpp; sourceTree = "<group>"; };
+		FA36A17B1219D52F00FCE7BA /* Idle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Idle.cpp; path = Source/Idle.cpp; sourceTree = "<group>"; };
+		FA36A17C1219D52F00FCE7BA /* Idle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Idle.h; path = Source/Idle.h; sourceTree = "<group>"; };
+		FA36A17D1219D52F00FCE7BA /* ImageLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageLoad.cpp; path = Source/ImageLoad.cpp; sourceTree = "<group>"; };
+		FA36A17E1219D52F00FCE7BA /* ImageLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageLoad.h; path = Source/ImageLoad.h; sourceTree = "<group>"; };
+		FA36A17F1219D52F00FCE7BA /* KeyboardInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeyboardInput.cpp; path = Source/KeyboardInput.cpp; sourceTree = "<group>"; };
+		FA36A1801219D52F00FCE7BA /* KeyboardInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardInput.h; path = Source/KeyboardInput.h; sourceTree = "<group>"; };
+		FA36A1811219D52F00FCE7BA /* KeyboardSpecialInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeyboardSpecialInput.cpp; path = Source/KeyboardSpecialInput.cpp; sourceTree = "<group>"; };
+		FA36A1821219D52F00FCE7BA /* KeyboardSpecialInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardSpecialInput.h; path = Source/KeyboardSpecialInput.h; sourceTree = "<group>"; };
+		FA36A1831219D52F00FCE7BA /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = Source/Main.cpp; sourceTree = "<group>"; };
+		FA36A1851219D52F00FCE7BA /* Player_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player_Update.cpp; sourceTree = "<group>"; };
+		FA36A1861219D52F00FCE7BA /* PlayerClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerClass.cpp; sourceTree = "<group>"; };
+		FA36A1871219D52F00FCE7BA /* PlayerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerClass.h; sourceTree = "<group>"; };
+		FA36A1881219D52F00FCE7BA /* Reshape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Reshape.cpp; path = Source/Reshape.cpp; sourceTree = "<group>"; };
+		FA36A1891219D52F00FCE7BA /* Reshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reshape.h; path = Source/Reshape.h; sourceTree = "<group>"; };
+		FA36A18C1219D52F00FCE7BA /* Ship.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ship.tga; sourceTree = "<group>"; };
+		FA36A18D1219D52F00FCE7BA /* Smiley.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Smiley.tga; sourceTree = "<group>"; };
+		FA36A18F1219D52F00FCE7BA /* ShipClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShipClass.cpp; sourceTree = "<group>"; };
+		FA36A1901219D52F00FCE7BA /* ShipClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipClass.h; sourceTree = "<group>"; };
+		FA36A1921219D52F00FCE7BA /* SpaceObject_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpaceObject_Draw.cpp; sourceTree = "<group>"; };
+		FA36A1931219D52F00FCE7BA /* SpaceObject_Init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpaceObject_Init.cpp; sourceTree = "<group>"; };
+		FA36A1941219D52F00FCE7BA /* SpaceObject_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpaceObject_Update.cpp; sourceTree = "<group>"; };
+		FA36A1951219D52F00FCE7BA /* SpaceObjectClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpaceObjectClass.cpp; sourceTree = "<group>"; };
+		FA36A1961219D52F00FCE7BA /* SpaceObjectClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceObjectClass.h; sourceTree = "<group>"; };
+		FA36A1981219D52F00FCE7BA /* VBOExtend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VBOExtend.cpp; sourceTree = "<group>"; };
+		FA36A1991219D52F00FCE7BA /* VBOExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBOExtend.h; sourceTree = "<group>"; };
+		FA36A1BE1219D54A00FCE7BA /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		FA36A1C21219D55200FCE7BA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FA79CBDC1220B3CE00A85D92 /* Button_Activate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button_Activate.cpp; sourceTree = "<group>"; };
+		FA79CBDD1220B3CE00A85D92 /* Button_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button_Update.cpp; sourceTree = "<group>"; };
+		FA79CBDE1220B3CE00A85D92 /* ButtonClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ButtonClass.cpp; sourceTree = "<group>"; };
+		FA79CBDF1220B3CE00A85D92 /* ButtonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonClass.h; sourceTree = "<group>"; };
+		FA79CBE11220B3CE00A85D92 /* ToggleEngine_Activate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToggleEngine_Activate.cpp; sourceTree = "<group>"; };
+		FA79CBE21220B3CE00A85D92 /* ToggleEngineClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToggleEngineClass.cpp; sourceTree = "<group>"; };
+		FA79CBE31220B3CE00A85D92 /* ToggleEngineClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleEngineClass.h; sourceTree = "<group>"; };
+		FA79CC0B1220B7E800A85D92 /* HUD_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUD_Draw.cpp; sourceTree = "<group>"; };
+		FA79CC0C1220B7E800A85D92 /* HUDClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUDClass.cpp; sourceTree = "<group>"; };
+		FA79CC0D1220B7E800A85D92 /* HUDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDClass.h; sourceTree = "<group>"; };
+		FA827000122C1F6600398BB4 /* PauseMenuClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuClass.h; sourceTree = "<group>"; };
+		FA827001122C1F6600398BB4 /* PauseMenuClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PauseMenuClass.cpp; sourceTree = "<group>"; };
+		FA827003122C1FD300398BB4 /* PauseMenu_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PauseMenu_Draw.cpp; sourceTree = "<group>"; };
+		FA847F8C1228685600B1645A /* Game_DrawString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game_DrawString.cpp; sourceTree = "<group>"; };
+		FAAAD950122C766E001F9FA3 /* ToggleMap_Activate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToggleMap_Activate.cpp; sourceTree = "<group>"; };
+		FAAAD951122C766E001F9FA3 /* ToggleMapClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToggleMapClass.cpp; sourceTree = "<group>"; };
+		FAAAD952122C766E001F9FA3 /* ToggleMapClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleMapClass.h; sourceTree = "<group>"; };
+		FAAAD96F122C9493001F9FA3 /* PauseMenu_Save.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PauseMenu_Save.cpp; sourceTree = "<group>"; };
+		FAAAD971122C94A0001F9FA3 /* PauseMenu_Load.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PauseMenu_Load.cpp; sourceTree = "<group>"; };
+		FAD85BB312275356000422B1 /* Map_Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map_Draw.cpp; sourceTree = "<group>"; };
+		FAD85BB412275356000422B1 /* MapClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapClass.cpp; sourceTree = "<group>"; };
+		FAD85BB512275356000422B1 /* MapClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapClass.h; sourceTree = "<group>"; };
+		FAF88E3D121EFA910077F6D6 /* PlanetClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlanetClass.cpp; sourceTree = "<group>"; };
+		FAF88E3E121EFA910077F6D6 /* PlanetClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetClass.h; sourceTree = "<group>"; };
+		FAF88E53121EFDAB0077F6D6 /* Planet_Update.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Planet_Update.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36A1BF1219D54A00FCE7BA /* GLUT.framework in Frameworks */,
+				FA36A1C31219D55200FCE7BA /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Space Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				FA36A1BE1219D54A00FCE7BA /* GLUT.framework */,
+				FA36A1C21219D55200FCE7BA /* OpenGL.framework */,
+			);
+			name = "Space Game Engine";
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F5B46123528A4007DE26F /* Font Class */,
+				FA36A15F1219D52F00FCE7BA /* Background Star Class */,
+				FA36A1651219D52F00FCE7BA /* Convert Special Keyboard Input */,
+				FA36A16B1219D52F00FCE7BA /* Display.cpp */,
+				FA225A821242D7C200D36176 /* Solar System Class */,
+				FA36A16C1219D52F00FCE7BA /* Display.h */,
+				FA36A16D1219D52F00FCE7BA /* End.cpp */,
+				FA36A16E1219D52F00FCE7BA /* End.h */,
+				FA36A16F1219D52F00FCE7BA /* ExtensionSupport.cpp */,
+				FA36A1701219D52F00FCE7BA /* ExtensionSupport.h */,
+				FA36A1711219D52F00FCE7BA /* Game Class */,
+				FA36A17A1219D52F00FCE7BA /* Game_loadTexture.cpp */,
+				FA79CBDB1220B3CE00A85D92 /* Button Class */,
+				FA081B57121DC1B400E762A6 /* Radar Class */,
+				FA36A17B1219D52F00FCE7BA /* Idle.cpp */,
+				FA36A17C1219D52F00FCE7BA /* Idle.h */,
+				FA36A17D1219D52F00FCE7BA /* ImageLoad.cpp */,
+				FA225A6B1242D76600D36176 /* List Class */,
+				FA36A17E1219D52F00FCE7BA /* ImageLoad.h */,
+				FA36A17F1219D52F00FCE7BA /* KeyboardInput.cpp */,
+				FA36A1801219D52F00FCE7BA /* KeyboardInput.h */,
+				FA36A1811219D52F00FCE7BA /* KeyboardSpecialInput.cpp */,
+				FA36A1821219D52F00FCE7BA /* KeyboardSpecialInput.h */,
+				FA826FFC122C1F1E00398BB4 /* Pause Menu Class */,
+				FA36A1831219D52F00FCE7BA /* Main.cpp */,
+				FA79CC0A1220B7E800A85D92 /* HUD Class */,
+				FAF88E3C121EFA910077F6D6 /* Planet Class */,
+				FA36A1841219D52F00FCE7BA /* Player Class */,
+				FA36A1881219D52F00FCE7BA /* Reshape.cpp */,
+				FAD85BB212275356000422B1 /* Map Class */,
+				FA36A1891219D52F00FCE7BA /* Reshape.h */,
+				FA36A18A1219D52F00FCE7BA /* Resources */,
+				FA36A18E1219D52F00FCE7BA /* Ship Class */,
+				FA36A1911219D52F00FCE7BA /* Space Object Class */,
+				FA36A1971219D52F00FCE7BA /* VBO */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* Space Game Engine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D9F5B46123528A4007DE26F /* Font Class */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F5B47123528D9007DE26F /* Font_DrawString.cpp */,
+				6D9F5B48123528D9007DE26F /* Font_Init.cpp */,
+				6D9F5B49123528D9007DE26F /* FontClass.cpp */,
+				6D9F5B4A123528D9007DE26F /* FontClass.h */,
+			);
+			name = "Font Class";
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* Space Game Engine.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		FA081B57121DC1B400E762A6 /* Radar Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA081B58121DC1B400E762A6 /* Radar_Draw.cpp */,
+				FA081B59121DC1B400E762A6 /* Radar_DrawBackground.cpp */,
+				FA081B5A121DC1B400E762A6 /* Radar_InitBackground.cpp */,
+				FA081B5B121DC1B400E762A6 /* RadarClass.cpp */,
+				FA081B5C121DC1B400E762A6 /* RadarClass.h */,
+			);
+			name = "Radar Class";
+			path = "Source/Radar Class";
+			sourceTree = "<group>";
+		};
+		FA225A6B1242D76600D36176 /* List Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA225A6C1242D76600D36176 /* List Item Class */,
+				FA225A711242D76600D36176 /* List_Draw.cpp */,
+				FA225A721242D76600D36176 /* List_Init.cpp */,
+				FA225A731242D76600D36176 /* List_Update.cpp */,
+				FA225A741242D76600D36176 /* ListClass.cpp */,
+				FA225A751242D76600D36176 /* ListClass.h */,
+				FA225A761242D76600D36176 /* ListItemChildren.cpp */,
+			);
+			name = "List Class";
+			path = "Source/List Class";
+			sourceTree = "<group>";
+		};
+		FA225A6C1242D76600D36176 /* List Item Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA225A6D1242D76600D36176 /* ListItemChildren.cpp */,
+				FA225A6E1242D76600D36176 /* ListItemChildren.h */,
+				FA225A6F1242D76600D36176 /* ListItemClass.cpp */,
+				FA225A701242D76600D36176 /* ListItemClass.h */,
+			);
+			path = "List Item Class";
+			sourceTree = "<group>";
+		};
+		FA225A821242D7C200D36176 /* Solar System Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA225A831242D7C200D36176 /* SolarSystemClass.cpp */,
+				FA225A841242D7C200D36176 /* SolarSystemClass.h */,
+			);
+			name = "Solar System Class";
+			path = "Source/Solar System Class";
+			sourceTree = "<group>";
+		};
+		FA36A15F1219D52F00FCE7BA /* Background Star Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A1601219D52F00FCE7BA /* BackgroundStar_Draw.cpp */,
+				FA36A1611219D52F00FCE7BA /* BackgroundStar_Init.cpp */,
+				FA36A1621219D52F00FCE7BA /* BackgroundStar_Update.cpp */,
+				FA36A1631219D52F00FCE7BA /* BackgroundStarClass.cpp */,
+				FA36A1641219D52F00FCE7BA /* BackgroundStarClass.h */,
+			);
+			name = "Background Star Class";
+			path = "Source/Background Star Class";
+			sourceTree = "<group>";
+		};
+		FA36A1651219D52F00FCE7BA /* Convert Special Keyboard Input */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A1661219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp */,
+				FA36A1671219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp */,
+				FA36A1681219D52F00FCE7BA /* ConvertSpecialKeyboardInput_Init.cpp */,
+				FA36A1691219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.cpp */,
+				FA36A16A1219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.h */,
+			);
+			name = "Convert Special Keyboard Input";
+			path = "Source/Convert Special Keyboard Input";
+			sourceTree = "<group>";
+		};
+		FA36A1711219D52F00FCE7BA /* Game Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A1721219D52F00FCE7BA /* Game_HandleKeyboardInput.cpp */,
+				FA36A1731219D52F00FCE7BA /* Game_HandleSpecialKeyboardInput.cpp */,
+				FA36A1741219D52F00FCE7BA /* Game_LimitFramerate.cpp */,
+				FA847F8C1228685600B1645A /* Game_DrawString.cpp */,
+				FA36A1751219D52F00FCE7BA /* Game_Setup.cpp */,
+				FA081B55121DC19800E762A6 /* Game_InitObjects.cpp */,
+				FA36A1761219D52F00FCE7BA /* Game_StartGame.cpp */,
+				FA36A1771219D52F00FCE7BA /* GameClass.cpp */,
+				FA36A1781219D52F00FCE7BA /* GameClass.h */,
+				FA36A1791219D52F00FCE7BA /* GetFrameRate.cpp */,
+			);
+			name = "Game Class";
+			path = "Source/Game Class";
+			sourceTree = "<group>";
+		};
+		FA36A1841219D52F00FCE7BA /* Player Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A1851219D52F00FCE7BA /* Player_Update.cpp */,
+				FA36A1861219D52F00FCE7BA /* PlayerClass.cpp */,
+				FA36A1871219D52F00FCE7BA /* PlayerClass.h */,
+			);
+			name = "Player Class";
+			path = "Source/Player Class";
+			sourceTree = "<group>";
+		};
+		FA36A18A1219D52F00FCE7BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A18B1219D52F00FCE7BA /* 2D */,
+			);
+			name = Resources;
+			path = Source/Resources;
+			sourceTree = "<group>";
+		};
+		FA36A18B1219D52F00FCE7BA /* 2D */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A18C1219D52F00FCE7BA /* Ship.tga */,
+				FA36A18D1219D52F00FCE7BA /* Smiley.tga */,
+			);
+			path = 2D;
+			sourceTree = "<group>";
+		};
+		FA36A18E1219D52F00FCE7BA /* Ship Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A18F1219D52F00FCE7BA /* ShipClass.cpp */,
+				FA36A1901219D52F00FCE7BA /* ShipClass.h */,
+			);
+			name = "Ship Class";
+			path = "Source/Ship Class";
+			sourceTree = "<group>";
+		};
+		FA36A1911219D52F00FCE7BA /* Space Object Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A1921219D52F00FCE7BA /* SpaceObject_Draw.cpp */,
+				FA36A1931219D52F00FCE7BA /* SpaceObject_Init.cpp */,
+				FA36A1941219D52F00FCE7BA /* SpaceObject_Update.cpp */,
+				FA36A1951219D52F00FCE7BA /* SpaceObjectClass.cpp */,
+				FA36A1961219D52F00FCE7BA /* SpaceObjectClass.h */,
+			);
+			name = "Space Object Class";
+			path = "Source/Space Object Class";
+			sourceTree = "<group>";
+		};
+		FA36A1971219D52F00FCE7BA /* VBO */ = {
+			isa = PBXGroup;
+			children = (
+				FA36A1981219D52F00FCE7BA /* VBOExtend.cpp */,
+				FA36A1991219D52F00FCE7BA /* VBOExtend.h */,
+			);
+			name = VBO;
+			path = Source/VBO;
+			sourceTree = "<group>";
+		};
+		FA79CBDB1220B3CE00A85D92 /* Button Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA225A7E1242D7A500D36176 /* ButtonClassChildren.cpp */,
+				FA225A7F1242D7A500D36176 /* ButtonClassChildren.h */,
+				FAAAD94F122C766E001F9FA3 /* Toggle Map Class */,
+				FA79CBDC1220B3CE00A85D92 /* Button_Activate.cpp */,
+				FA79CBDD1220B3CE00A85D92 /* Button_Update.cpp */,
+				FA79CBDE1220B3CE00A85D92 /* ButtonClass.cpp */,
+				FA79CBDF1220B3CE00A85D92 /* ButtonClass.h */,
+				FA79CBE01220B3CE00A85D92 /* Toggle Engine Class */,
+			);
+			name = "Button Class";
+			path = "Source/Button Class";
+			sourceTree = "<group>";
+		};
+		FA79CBE01220B3CE00A85D92 /* Toggle Engine Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA79CBE11220B3CE00A85D92 /* ToggleEngine_Activate.cpp */,
+				FA79CBE21220B3CE00A85D92 /* ToggleEngineClass.cpp */,
+				FA79CBE31220B3CE00A85D92 /* ToggleEngineClass.h */,
+			);
+			path = "Toggle Engine Class";
+			sourceTree = "<group>";
+		};
+		FA79CC0A1220B7E800A85D92 /* HUD Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA79CC0B1220B7E800A85D92 /* HUD_Draw.cpp */,
+				FA79CC0C1220B7E800A85D92 /* HUDClass.cpp */,
+				FA79CC0D1220B7E800A85D92 /* HUDClass.h */,
+			);
+			name = "HUD Class";
+			path = "Source/HUD Class";
+			sourceTree = "<group>";
+		};
+		FA826FFC122C1F1E00398BB4 /* Pause Menu Class */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F5B521235291E007DE26F /* PauseMenu_Update.cpp */,
+				FA827000122C1F6600398BB4 /* PauseMenuClass.h */,
+				FA827001122C1F6600398BB4 /* PauseMenuClass.cpp */,
+				FA827003122C1FD300398BB4 /* PauseMenu_Draw.cpp */,
+				FAAAD96F122C9493001F9FA3 /* PauseMenu_Save.cpp */,
+				FAAAD971122C94A0001F9FA3 /* PauseMenu_Load.cpp */,
+			);
+			name = "Pause Menu Class";
+			path = "Source/Pause Menu Class";
+			sourceTree = "<group>";
+		};
+		FAAAD94F122C766E001F9FA3 /* Toggle Map Class */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAD950122C766E001F9FA3 /* ToggleMap_Activate.cpp */,
+				FAAAD951122C766E001F9FA3 /* ToggleMapClass.cpp */,
+				FAAAD952122C766E001F9FA3 /* ToggleMapClass.h */,
+			);
+			path = "Toggle Map Class";
+			sourceTree = "<group>";
+		};
+		FAD85BB212275356000422B1 /* Map Class */ = {
+			isa = PBXGroup;
+			children = (
+				FAD85BB312275356000422B1 /* Map_Draw.cpp */,
+				FAD85BB412275356000422B1 /* MapClass.cpp */,
+				FAD85BB512275356000422B1 /* MapClass.h */,
+			);
+			name = "Map Class";
+			path = "Source/Map Class";
+			sourceTree = "<group>";
+		};
+		FAF88E3C121EFA910077F6D6 /* Planet Class */ = {
+			isa = PBXGroup;
+			children = (
+				FAF88E53121EFDAB0077F6D6 /* Planet_Update.cpp */,
+				FAF88E3D121EFA910077F6D6 /* PlanetClass.cpp */,
+				FAF88E3E121EFA910077F6D6 /* PlanetClass.h */,
+			);
+			name = "Planet Class";
+			path = "Source/Planet Class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* Space Game Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "Space Game Engine" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Game Engine";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Space Game Engine";
+			productReference = 8DD76F6C0486A84900D96B5E /* Space Game Engine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Space Game Engine" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Space Game Engine */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* Space Game Engine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA36A19A1219D52F00FCE7BA /* BackgroundStar_Draw.cpp in Sources */,
+				FA36A19B1219D52F00FCE7BA /* BackgroundStar_Init.cpp in Sources */,
+				FA36A19C1219D52F00FCE7BA /* BackgroundStar_Update.cpp in Sources */,
+				FA36A19D1219D52F00FCE7BA /* BackgroundStarClass.cpp in Sources */,
+				FA36A19E1219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp in Sources */,
+				FA36A19F1219D52F00FCE7BA /* ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp in Sources */,
+				FA36A1A01219D52F00FCE7BA /* ConvertSpecialKeyboardInput_Init.cpp in Sources */,
+				FA36A1A11219D52F00FCE7BA /* ConvertSpecialKeyboardInputClass.cpp in Sources */,
+				FA36A1A21219D52F00FCE7BA /* Display.cpp in Sources */,
+				FA36A1A31219D52F00FCE7BA /* End.cpp in Sources */,
+				FA36A1A41219D52F00FCE7BA /* ExtensionSupport.cpp in Sources */,
+				FA36A1A51219D52F00FCE7BA /* Game_HandleKeyboardInput.cpp in Sources */,
+				FA36A1A61219D52F00FCE7BA /* Game_HandleSpecialKeyboardInput.cpp in Sources */,
+				FA36A1A71219D52F00FCE7BA /* Game_LimitFramerate.cpp in Sources */,
+				FA36A1A81219D52F00FCE7BA /* Game_Setup.cpp in Sources */,
+				FA36A1A91219D52F00FCE7BA /* Game_StartGame.cpp in Sources */,
+				FA36A1AA1219D52F00FCE7BA /* GameClass.cpp in Sources */,
+				FA36A1AB1219D52F00FCE7BA /* GetFrameRate.cpp in Sources */,
+				FA36A1AC1219D52F00FCE7BA /* Game_loadTexture.cpp in Sources */,
+				FA36A1AD1219D52F00FCE7BA /* Idle.cpp in Sources */,
+				FA36A1AE1219D52F00FCE7BA /* ImageLoad.cpp in Sources */,
+				FA36A1AF1219D52F00FCE7BA /* KeyboardInput.cpp in Sources */,
+				FA36A1B01219D52F00FCE7BA /* KeyboardSpecialInput.cpp in Sources */,
+				FA36A1B11219D52F00FCE7BA /* Main.cpp in Sources */,
+				FA36A1B21219D52F00FCE7BA /* Player_Update.cpp in Sources */,
+				FA36A1B31219D52F00FCE7BA /* PlayerClass.cpp in Sources */,
+				FA36A1B41219D52F00FCE7BA /* Reshape.cpp in Sources */,
+				FA36A1B51219D52F00FCE7BA /* ShipClass.cpp in Sources */,
+				FA36A1B61219D52F00FCE7BA /* SpaceObject_Draw.cpp in Sources */,
+				FA36A1B71219D52F00FCE7BA /* SpaceObject_Init.cpp in Sources */,
+				FA36A1B81219D52F00FCE7BA /* SpaceObject_Update.cpp in Sources */,
+				FA36A1B91219D52F00FCE7BA /* SpaceObjectClass.cpp in Sources */,
+				FA36A1BA1219D52F00FCE7BA /* VBOExtend.cpp in Sources */,
+				FA081B56121DC19800E762A6 /* Game_InitObjects.cpp in Sources */,
+				FA081B5D121DC1B400E762A6 /* Radar_Draw.cpp in Sources */,
+				FA081B5E121DC1B400E762A6 /* Radar_DrawBackground.cpp in Sources */,
+				FA081B5F121DC1B400E762A6 /* Radar_InitBackground.cpp in Sources */,
+				FA081B60121DC1B400E762A6 /* RadarClass.cpp in Sources */,
+				FAF88E3F121EFA910077F6D6 /* PlanetClass.cpp in Sources */,
+				FAF88E54121EFDAB0077F6D6 /* Planet_Update.cpp in Sources */,
+				FA79CBE41220B3CE00A85D92 /* Button_Activate.cpp in Sources */,
+				FA79CBE51220B3CE00A85D92 /* Button_Update.cpp in Sources */,
+				FA79CBE61220B3CE00A85D92 /* ButtonClass.cpp in Sources */,
+				FA79CBE71220B3CE00A85D92 /* ToggleEngine_Activate.cpp in Sources */,
+				FA79CBE81220B3CE00A85D92 /* ToggleEngineClass.cpp in Sources */,
+				FA79CC0E1220B7E800A85D92 /* HUD_Draw.cpp in Sources */,
+				FA79CC0F1220B7E800A85D92 /* HUDClass.cpp in Sources */,
+				FAD85BB612275356000422B1 /* Map_Draw.cpp in Sources */,
+				FAD85BB712275356000422B1 /* MapClass.cpp in Sources */,
+				FA847F8D1228685600B1645A /* Game_DrawString.cpp in Sources */,
+				FA827002122C1F6600398BB4 /* PauseMenuClass.cpp in Sources */,
+				FA827004122C1FD300398BB4 /* PauseMenu_Draw.cpp in Sources */,
+				FAAAD953122C766E001F9FA3 /* ToggleMap_Activate.cpp in Sources */,
+				FAAAD954122C766E001F9FA3 /* ToggleMapClass.cpp in Sources */,
+				FAAAD970122C9493001F9FA3 /* PauseMenu_Save.cpp in Sources */,
+				FAAAD972122C94A0001F9FA3 /* PauseMenu_Load.cpp in Sources */,
+				6D9F5B4B123528D9007DE26F /* Font_DrawString.cpp in Sources */,
+				6D9F5B4C123528D9007DE26F /* Font_Init.cpp in Sources */,
+				6D9F5B4D123528D9007DE26F /* FontClass.cpp in Sources */,
+				6D9F5B531235291E007DE26F /* PauseMenu_Update.cpp in Sources */,
+				FA225A771242D76600D36176 /* ListItemChildren.cpp in Sources */,
+				FA225A781242D76600D36176 /* ListItemClass.cpp in Sources */,
+				FA225A791242D76600D36176 /* List_Draw.cpp in Sources */,
+				FA225A7A1242D76600D36176 /* List_Init.cpp in Sources */,
+				FA225A7B1242D76600D36176 /* List_Update.cpp in Sources */,
+				FA225A7C1242D76600D36176 /* ListClass.cpp in Sources */,
+				FA225A7D1242D76600D36176 /* ListItemChildren.cpp in Sources */,
+				FA225A801242D7A500D36176 /* ButtonClassChildren.cpp in Sources */,
+				FA225A851242D7C200D36176 /* SolarSystemClass.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Space Game Engine";
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Space Game Engine";
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "Space Game Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "Space Game Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

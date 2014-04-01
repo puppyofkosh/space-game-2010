@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="Space Game Engine"
+	ProjectGUID="{3DD5E935-4EC6-4F54-A365-A60C2F78B335}"
+	RootNamespace="SpaceGameEngine"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="GlU32.Lib OpenGL32.Lib glut32.lib"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				EnableIntrinsicFunctions="true"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkIncremental="1"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\Source\Display.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\End.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\ExtensionSupport.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Game Class\GetFrameRate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Idle.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\KeyboardInput.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\KeyboardSpecialInput.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Reshape.cpp"
+				>
+			</File>
+			<Filter
+				Name="Game Class"
+				>
+				<File
+					RelativePath=".\Source\Game Class\Game_DrawString.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_GenerateUniverse.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_HandleKeyboardInput.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_HandleSpecialKeyboardInput.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_InitObjects.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_LimitFramerate.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game_loadTexture.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_Setup.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\Game_StartGame.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Game Class\GameClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Space Object Class"
+				>
+				<File
+					RelativePath=".\Source\Space Object Class\SpaceObject_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Space Object Class\SpaceObject_Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Space Object Class\SpaceObject_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Space Object Class\SpaceObjectClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="VBO"
+				>
+				<File
+					RelativePath=".\Source\VBO\VBOExtend.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="TGA Loader"
+				>
+				<File
+					RelativePath=".\Source\ImageLoad.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Player Class"
+				>
+				<File
+					RelativePath=".\Source\Player Class\Player_SetTradeMission.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Player Class\Player_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Player Class\PlayerClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Ship Class"
+				>
+				<File
+					RelativePath=".\Source\Ship Class\ShipClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Background Star Class"
+				>
+				<File
+					RelativePath=".\Source\Background Star Class\BackgroundStar_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Background Star Class\BackgroundStar_Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Background Star Class\BackgroundStar_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Background Star Class\BackgroundStarClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Convert Special Keyboard Input"
+				>
+				<File
+					RelativePath=".\Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInput_Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInputClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Planet Class"
+				>
+				<File
+					RelativePath=".\Source\Planet Class\Planet_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Planet Class\PlanetClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Solar System Class"
+				>
+				<File
+					RelativePath=".\Source\Solar System Class\SolarSystemClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Star Class"
+				>
+				<File
+					RelativePath=".\Source\Star Class\StarClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Radar Class"
+				>
+				<File
+					RelativePath=".\Source\Radar Class\Radar_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Radar Class\Radar_DrawBackground.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Radar Class\Radar_InitBackground.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Radar Class\RadarClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="HUD Class"
+				>
+				<File
+					RelativePath=".\Source\HUD Class\HUD_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\HUD Class\HUDClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Button Class"
+				>
+				<File
+					RelativePath=".\Source\Button Class\Button_Activate.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Button Class\Button_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Button Class\ButtonClass.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Button Class\ButtonClassChildren.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Map Class"
+				>
+				<File
+					RelativePath=".\Source\Map Class\Map_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Map Class\Map_DrawElement.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Map Class\MapClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Pause Menu Class"
+				>
+				<File
+					RelativePath=".\Source\Pause Menu Class\PauseMenu_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Pause Menu Class\PauseMenu_Load.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Pause Menu Class\PauseMenu_Save.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Pause Menu Class\PauseMenu_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Pause Menu Class\PauseMenuClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Font"
+				>
+				<File
+					RelativePath=".\Source\Font Class\Font_DrawString.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Font Class\Font_Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Font Class\FontClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="List Class"
+				>
+				<File
+					RelativePath=".\Source\List Class\List_Add.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List_Clear.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List_Draw.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List_Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List_Remove.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List_Update.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\ListClass.cpp"
+					>
+				</File>
+				<Filter
+					Name="List Item Class"
+					>
+					<File
+						RelativePath=".\Source\List Class\List Item Class\ListItemChildren.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Source\List Class\List Item Class\ListItemClass.cpp"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Land Menu Class"
+				>
+				<File
+					RelativePath=".\Source\Land Menu Class\LandMenu_Setup.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Land Menu Class\LandMenuClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Part Class"
+				>
+				<File
+					RelativePath=".\Source\Part Class\PartClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Ship Part Class"
+				>
+				<File
+					RelativePath=".\Source\Ship Part Class\ShipPart_Gets.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Ship Part Class\ShipPartClass.cpp"
+					>
+				</File>
+				<Filter
+					Name="Ship Part Children"
+					>
+					<File
+						RelativePath=".\Source\Ship Part Class\ShipPartChildren.cpp"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Cargo Class"
+				>
+				<File
+					RelativePath=".\Source\Cargo Class\CargoClass.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Trade Mission Class"
+				>
+				<File
+					RelativePath=".\Source\Trade Mission Class\TradeMission_SetMission.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Government Class"
+				>
+				<File
+					RelativePath=".\Source\Government Class\Government_AddPlanet.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Government Class\Government_RemoveGovernment.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Government Class\Government_RemovePlanet.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Government Class\GovernmentClass.cpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\Source\Background Star Class\BackgroundStarClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Cargo Class\CargoClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Convert Special Keyboard Input\ConvertSpecialKeyboardInputClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Display.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\End.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\ExtensionSupport.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Font Class\FontClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Game Class\GameClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Government Class\GovernmentClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\HUD Class\HUDClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Idle.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\ImageLoad.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\KeyboardInput.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\KeyboardSpecialInput.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Land Menu Class\LandMenuClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Map Class\MapClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Matrix.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Part Class\PartClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Pause Menu Class\PauseMenuClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Planet Class\PlanetClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Player Class\PlayerClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Radar Class\RadarClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Reshape.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Ship Class\ShipClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Solar System Class\SolarSystemClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Space Object Class\SpaceObjectClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Star Class\StarClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\Trade Mission Class\TradeMissionClass.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Source\VBO\VBOExtend.h"
+				>
+			</File>
+			<Filter
+				Name="Button Classes"
+				>
+				<File
+					RelativePath=".\Source\Button Class\ButtonClass.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\Button Class\ButtonClassChildren.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="List Class"
+				>
+				<File
+					RelativePath=".\Source\List Class\ListClass.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List Item Class\ListItemChildren.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source\List Class\List Item Class\ListItemClass.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Ship Part Class"
+				>
+				<File
+					RelativePath=".\Source\Ship Part Class\ShipPartClass.h"
+					>
+				</File>
+				<Filter
+					Name="Part Class Children"
+					>
+					<File
+						RelativePath=".\Source\Ship Part Class\ShipPartChildren.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,11 @@
+#include "GameClass.h"
+
+#include <iostream>
+
+void Game::handleKeyboardInput(unsigned char key, int x, int y)
+{
+	if (key == 't')	//If the T key was pressed,	
+	{
+	//	std::cout << "HOLY SHIT";	//Say HOLY SHIT in the Console
+	}
+}

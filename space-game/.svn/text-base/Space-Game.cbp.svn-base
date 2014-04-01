@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Space-Game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Space-Game" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="/usr/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lGL -lglut -lglut32 -lglu32 -lopengl32" />
+					<Add directory="../../../usr/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Space-Game" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="/usr/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/usr/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add directory="/usr/lib" />
+		</Linker>
+		<Unit filename="Space Game Engine/Source/Background Star Class/BackgroundStarClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Background Star Class/BackgroundStarClass.h" />
+		<Unit filename="Space Game Engine/Source/Background Star Class/BackgroundStar_Draw.cpp" />
+		<Unit filename="Space Game Engine/Source/Background Star Class/BackgroundStar_Init.cpp" />
+		<Unit filename="Space Game Engine/Source/Background Star Class/BackgroundStar_Update.cpp" />
+		<Unit filename="Space Game Engine/Source/Button Class/ButtonClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Button Class/ButtonClass.h" />
+		<Unit filename="Space Game Engine/Source/Button Class/Button_Activate.cpp" />
+		<Unit filename="Space Game Engine/Source/Button Class/Button_Update.cpp" />
+		<Unit filename="Space Game Engine/Source/Button Class/Toggle Engine Class/ToggleEngineClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Button Class/Toggle Engine Class/ToggleEngineClass.h" />
+		<Unit filename="Space Game Engine/Source/Button Class/Toggle Engine Class/ToggleEngine_Activate.cpp" />
+		<Unit filename="Space Game Engine/Source/Convert Special Keyboard Input/ConvertSpecialKeyboardInputClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Convert Special Keyboard Input/ConvertSpecialKeyboardInputClass.h" />
+		<Unit filename="Space Game Engine/Source/Convert Special Keyboard Input/ConvertSpecialKeyboardInput_ConvertFromGlutKey.cpp" />
+		<Unit filename="Space Game Engine/Source/Convert Special Keyboard Input/ConvertSpecialKeyboardInput_ConvertToGlutKey.cpp" />
+		<Unit filename="Space Game Engine/Source/Convert Special Keyboard Input/ConvertSpecialKeyboardInput_Init.cpp" />
+		<Unit filename="Space Game Engine/Source/Display.cpp" />
+		<Unit filename="Space Game Engine/Source/Display.h" />
+		<Unit filename="Space Game Engine/Source/End.cpp" />
+		<Unit filename="Space Game Engine/Source/End.h" />
+		<Unit filename="Space Game Engine/Source/ExtensionSupport.cpp" />
+		<Unit filename="Space Game Engine/Source/ExtensionSupport.h" />
+		<Unit filename="Space Game Engine/Source/Game Class/GameClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/GameClass.h" />
+		<Unit filename="Space Game Engine/Source/Game Class/Game_HandleKeyboardInput.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/Game_HandleSpecialKeyboardInput.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/Game_InitObjects.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/Game_LimitFramerate.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/Game_Setup.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/Game_StartGame.cpp" />
+		<Unit filename="Space Game Engine/Source/Game Class/GetFrameRate.cpp" />
+		<Unit filename="Space Game Engine/Source/Game_loadTexture.cpp" />
+		<Unit filename="Space Game Engine/Source/HUD Class/HUDClass.cpp" />
+		<Unit filename="Space Game Engine/Source/HUD Class/HUDClass.h" />
+		<Unit filename="Space Game Engine/Source/HUD Class/HUD_Draw.cpp" />
+		<Unit filename="Space Game Engine/Source/Idle.cpp" />
+		<Unit filename="Space Game Engine/Source/Idle.h" />
+		<Unit filename="Space Game Engine/Source/ImageLoad.cpp" />
+		<Unit filename="Space Game Engine/Source/ImageLoad.h" />
+		<Unit filename="Space Game Engine/Source/KeyboardInput.cpp" />
+		<Unit filename="Space Game Engine/Source/KeyboardInput.h" />
+		<Unit filename="Space Game Engine/Source/KeyboardSpecialInput.cpp" />
+		<Unit filename="Space Game Engine/Source/KeyboardSpecialInput.h" />
+		<Unit filename="Space Game Engine/Source/Main.cpp" />
+		<Unit filename="Space Game Engine/Source/Planet Class/PlanetClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Planet Class/PlanetClass.h" />
+		<Unit filename="Space Game Engine/Source/Planet Class/Planet_Update.cpp" />
+		<Unit filename="Space Game Engine/Source/Player Class/PlayerClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Player Class/PlayerClass.h" />
+		<Unit filename="Space Game Engine/Source/Player Class/Player_Update.cpp" />
+		<Unit filename="Space Game Engine/Source/Radar Class/RadarClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Radar Class/RadarClass.h" />
+		<Unit filename="Space Game Engine/Source/Radar Class/Radar_Draw.cpp" />
+		<Unit filename="Space Game Engine/Source/Radar Class/Radar_DrawBackground.cpp" />
+		<Unit filename="Space Game Engine/Source/Radar Class/Radar_InitBackground.cpp" />
+		<Unit filename="Space Game Engine/Source/Reshape.cpp" />
+		<Unit filename="Space Game Engine/Source/Reshape.h" />
+		<Unit filename="Space Game Engine/Source/Ship Class/ShipClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Ship Class/ShipClass.h" />
+		<Unit filename="Space Game Engine/Source/Solar System Class/SolarSystemClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Solar System Class/SolarSystemClass.h" />
+		<Unit filename="Space Game Engine/Source/Space Object Class/SpaceObjectClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Space Object Class/SpaceObjectClass.h" />
+		<Unit filename="Space Game Engine/Source/Space Object Class/SpaceObject_Draw.cpp" />
+		<Unit filename="Space Game Engine/Source/Space Object Class/SpaceObject_Init.cpp" />
+		<Unit filename="Space Game Engine/Source/Space Object Class/SpaceObject_Update.cpp" />
+		<Unit filename="Space Game Engine/Source/Star Class/StarClass.cpp" />
+		<Unit filename="Space Game Engine/Source/Star Class/StarClass.h" />
+		<Unit filename="Space Game Engine/Source/VBO/VBOExtend.cpp" />
+		<Unit filename="Space Game Engine/Source/VBO/VBOExtend.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

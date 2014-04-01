@@ -1,0 +1,154 @@
+﻿Build started 2/2/2011 7:52:12 PM.
+     1>Project "D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine\Space Game Engine.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Space Game Engine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "Source\Background Star Class\BackgroundStarClass.cpp" "Source\Background Star Class\BackgroundStar_Draw.cpp" "Source\Background Star Class\BackgroundStar_Init.cpp" "Source\Background Star Class\BackgroundStar_Update.cpp" "Source\Button Class\ButtonClass.cpp" "Source\Button Class\ButtonClassChildren.cpp" "Source\Button Class\Button_Activate.cpp" "Source\Button Class\Button_Update.cpp" Source\Display.cpp Source\End.cpp "Source\Font Class\Font_DrawString.cpp" "Source\Font Class\Font_Init.cpp" "Source\Game Class\GameClass.cpp" "Source\Game Class\Game_DrawString.cpp" "Source\Game Class\Game_GenerateUniverse.cpp" "Source\Game Class\Game_HandleKeyboardInput.cpp" "Source\Game Class\Game_HandleSpecialKeyboardInput.cpp" "Source\Game Class\Game_InitObjects.cpp" "Source\Game Class\Game_LimitFramerate.cpp" "Source\Game Class\Game_Setup.cpp" "Source\Game Class\Game_StartGame.cpp" "Source\Game Class\GetFrameRate.cpp" Source\Game_loadTexture.cpp "Source\HUD Class\HUDClass.cpp" "Source\HUD Class\HUD_Draw.cpp" Source\Idle.cpp Source\KeyboardInput.cpp Source\KeyboardSpecialInput.cpp "Source\Land Menu Class\LandMenu_Setup.cpp" "Source\List Class\List Item Class\ListItemChildren.cpp" "Source\List Class\List_Draw.cpp" "Source\List Class\List_Update.cpp" Source\Main.cpp "Source\Map Class\Map_Draw.cpp" "Source\Map Class\Map_DrawElement.cpp" "Source\Pause Menu Class\PauseMenu_Draw.cpp" "Source\Pause Menu Class\PauseMenu_Load.cpp" "Source\Pause Menu Class\PauseMenu_Save.cpp" "Source\Pause Menu Class\PauseMenu_Update.cpp" "Source\Planet Class\Planet_Update.cpp" "Source\Player Class\Player_Update.cpp" "Source\Radar Class\Radar_Draw.cpp" "Source\Radar Class\Radar_InitBackground.cpp" "Source\Space Object Class\SpaceObject_Init.cpp" "Source\Space Object Class\SpaceObject_Update.cpp"
+         BackgroundStarClass.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         SpaceObject_Update.cpp
+         SpaceObject_Init.cpp
+         Radar_InitBackground.cpp
+         Radar_Draw.cpp
+         Player_Update.cpp
+         Planet_Update.cpp
+         PauseMenu_Update.cpp
+         PauseMenu_Save.cpp
+         PauseMenu_Load.cpp
+         PauseMenu_Draw.cpp
+         Map_DrawElement.cpp
+         Map_Draw.cpp
+         Main.cpp
+         List_Update.cpp
+         List_Draw.cpp
+         ListItemChildren.cpp
+         LandMenu_Setup.cpp
+         KeyboardSpecialInput.cpp
+         KeyboardInput.cpp
+         Idle.cpp
+         HUD_Draw.cpp
+         HUDClass.cpp
+         Game_loadTexture.cpp
+         GetFrameRate.cpp
+         Game_StartGame.cpp
+         Game_Setup.cpp
+         Game_LimitFramerate.cpp
+         Game_InitObjects.cpp
+         Game_HandleSpecialKeyboardInput.cpp
+         Game_HandleKeyboardInput.cpp
+         Game_GenerateUniverse.cpp
+         Game_DrawString.cpp
+         GameClass.cpp
+         Font_Init.cpp
+         Font_DrawString.cpp
+         End.cpp
+         Display.cpp
+         Button_Update.cpp
+         Button_Activate.cpp
+         ButtonClassChildren.cpp
+         ButtonClass.cpp
+         BackgroundStar_Update.cpp
+         BackgroundStar_Init.cpp
+         BackgroundStar_Draw.cpp
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Debug\Space Game Engine.exe" /INCREMENTAL /NOLOGO GlU32.Lib OpenGL32.Lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Space Game Engine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Debug\Space Game Engine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Debug\Space Game Engine.lib" /MACHINE:X86 "Debug\Space Game Engine.exe.embed.manifest.res"
+         Debug\Display.obj
+         Debug\End.obj
+         Debug\ExtensionSupport.obj
+         Debug\GetFrameRate.obj
+         Debug\Idle.obj
+         Debug\KeyboardInput.obj
+         Debug\KeyboardSpecialInput.obj
+         Debug\Main.obj
+         Debug\Reshape.obj
+         Debug\Game_DrawString.obj
+         Debug\Game_GenerateUniverse.obj
+         Debug\Game_HandleKeyboardInput.obj
+         Debug\Game_HandleSpecialKeyboardInput.obj
+         Debug\Game_InitObjects.obj
+         Debug\Game_LimitFramerate.obj
+         Debug\Game_loadTexture.obj
+         Debug\Game_Setup.obj
+         Debug\Game_StartGame.obj
+         Debug\GameClass.obj
+         Debug\SpaceObject_Draw.obj
+         Debug\SpaceObject_Init.obj
+         Debug\SpaceObject_Update.obj
+         Debug\SpaceObjectClass.obj
+         Debug\VBOExtend.obj
+         Debug\ImageLoad.obj
+         Debug\Player_SetTradeMission.obj
+         Debug\Player_Update.obj
+         Debug\PlayerClass.obj
+         Debug\ShipClass.obj
+         Debug\BackgroundStar_Draw.obj
+         Debug\BackgroundStar_Init.obj
+         Debug\BackgroundStar_Update.obj
+         Debug\BackgroundStarClass.obj
+         Debug\ConvertSpecialKeyboardInput_ConvertFromGlutKey.obj
+         Debug\ConvertSpecialKeyboardInput_ConvertToGlutKey.obj
+         Debug\ConvertSpecialKeyboardInput_Init.obj
+         Debug\ConvertSpecialKeyboardInputClass.obj
+         Debug\Planet_Update.obj
+         Debug\PlanetClass.obj
+         Debug\SolarSystemClass.obj
+         Debug\StarClass.obj
+         Debug\Radar_Draw.obj
+         Debug\Radar_DrawBackground.obj
+         Debug\Radar_InitBackground.obj
+         Debug\RadarClass.obj
+         Debug\HUD_Draw.obj
+         Debug\HUDClass.obj
+         Debug\Button_Activate.obj
+         Debug\Button_Update.obj
+         Debug\ButtonClass.obj
+         Debug\ButtonClassChildren.obj
+         Debug\Map_Draw.obj
+         Debug\Map_DrawElement.obj
+         Debug\MapClass.obj
+         Debug\PauseMenu_Draw.obj
+         Debug\PauseMenu_Load.obj
+         Debug\PauseMenu_Save.obj
+         Debug\PauseMenu_Update.obj
+         Debug\PauseMenuClass.obj
+         Debug\Font_DrawString.obj
+         Debug\Font_Init.obj
+         Debug\FontClass.obj
+         Debug\List_Add.obj
+         Debug\List_Clear.obj
+         Debug\List_Draw.obj
+         Debug\List_Init.obj
+         Debug\List_Remove.obj
+         Debug\List_Update.obj
+         Debug\ListClass.obj
+         Debug\ListItemChildren.obj
+         Debug\ListItemClass.obj
+         Debug\LandMenu_Setup.obj
+         Debug\LandMenuClass.obj
+         Debug\PartClass.obj
+         Debug\ShipPart_Gets.obj
+         Debug\ShipPartClass.obj
+         Debug\ShipPartChildren.obj
+         Debug\CargoClass.obj
+         Debug\TradeMission_SetMission.obj
+         Debug\Government_AddPlanet.obj
+         Debug\Government_RemoveGovernment.obj
+         Debug\Government_RemovePlanet.obj
+         Debug\GovernmentClass.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Space Game Engine.exe.embed.manifest" /manifest "Debug\Space Game Engine.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Space Game Engine.vcxproj -> D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Debug\Space Game Engine.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Space Game Engine.unsuccessfulbuild".
+         Touching "Debug\Space Game Engine.lastbuildstate".
+     1>Done Building Project "D:\Ian Boros\My Documents\Visual Studio 2008\Projects\OPEN GL STUFF\Space Game Engine_MAC_WIN 2 current\space-game\Space Game Engine\Space Game Engine.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.14

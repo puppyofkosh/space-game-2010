@@ -1,0 +1,212 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 6D9F5B301235279D007DE26F /* Space Game Engine */;
+		activeTarget = 8DD76F620486A84900D96B5E /* Space Game Engine */;
+		addToTargets = (
+			8DD76F620486A84900D96B5E /* Space Game Engine */,
+		);
+		codeSenseManager = 6D9F5B3E123527C0007DE26F /* Code sense */;
+		executables = (
+			6D9F5B301235279D007DE26F /* Space Game Engine */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					577,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 305473437;
+			PBXWorkspaceStateSaveDate = 305473437;
+		};
+		perUserProjectItems = {
+			6D9F5B6A12352AAD007DE26F /* PBXTextBookmark */ = 6D9F5B6A12352AAD007DE26F /* PBXTextBookmark */;
+			6D9F5B6B12352AAD007DE26F /* PBXTextBookmark */ = 6D9F5B6B12352AAD007DE26F /* PBXTextBookmark */;
+			6D9F5B8112352B7A007DE26F /* PBXTextBookmark */ = 6D9F5B8112352B7A007DE26F /* PBXTextBookmark */;
+			6D9F5B8212352B7A007DE26F /* PBXBookmark */ = 6D9F5B8212352B7A007DE26F /* PBXBookmark */;
+			6D9F5BA012352E0A007DE26F /* PBXBookmark */ = 6D9F5BA012352E0A007DE26F /* PBXBookmark */;
+			6D9F5BB112352F0D007DE26F /* PBXTextBookmark */ = 6D9F5BB112352F0D007DE26F /* PBXTextBookmark */;
+			6D9F5BB212352F0D007DE26F /* PBXTextBookmark */ = 6D9F5BB212352F0D007DE26F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 6D9F5B3D123527C0007DE26F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6D9F5B301235279D007DE26F /* Space Game Engine */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Space Game Engine";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	6D9F5B3D123527C0007DE26F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	6D9F5B3E123527C0007DE26F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6D9F5B6A12352AAD007DE26F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA36A16E1219D52F00FCE7BA /* End.h */;
+		name = "End.h: 1";
+		rLen = 0;
+		rLoc = 11;
+		rType = 0;
+		vrLen = 11;
+		vrLoc = 0;
+	};
+	6D9F5B6B12352AAD007DE26F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA36A16F1219D52F00FCE7BA /* ExtensionSupport.cpp */;
+		name = "ExtensionSupport.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 474;
+		vrLoc = 0;
+	};
+	6D9F5B8112352B7A007DE26F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA36A16B1219D52F00FCE7BA /* Display.cpp */;
+		name = "Display.cpp: 82";
+		rLen = 0;
+		rLoc = 2372;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 2177;
+	};
+	6D9F5B8212352B7A007DE26F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FA36A1831219D52F00FCE7BA /* Main.cpp */;
+	};
+	6D9F5BA012352E0A007DE26F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FA36A1831219D52F00FCE7BA /* Main.cpp */;
+	};
+	6D9F5BB112352F0D007DE26F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA36A1831219D52F00FCE7BA /* Main.cpp */;
+		name = "Main.cpp: 40";
+		rLen = 0;
+		rLoc = 1019;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 745;
+	};
+	6D9F5BB212352F0D007DE26F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA36A1831219D52F00FCE7BA /* Main.cpp */;
+		name = "Main.cpp: 49";
+		rLen = 0;
+		rLoc = 1553;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 1090;
+	};
+	8DD76F620486A84900D96B5E /* Space Game Engine */ = {
+		activeExec = 0;
+		executables = (
+			6D9F5B301235279D007DE26F /* Space Game Engine */,
+		);
+	};
+	FA36A1621219D52F00FCE7BA /* BackgroundStar_Update.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {852, 403}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{389, 366}";
+		};
+	};
+	FA36A16B1219D52F00FCE7BA /* Display.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {698, 1274}}";
+			sepNavSelRange = "{2546, 0}";
+			sepNavVisRange = "{2025, 422}";
+			sepNavWindowFrame = "{{170, 20}, {750, 558}}";
+		};
+	};
+	FA36A16E1219D52F00FCE7BA /* End.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 260}}";
+			sepNavSelRange = "{11, 0}";
+			sepNavVisRange = "{0, 11}";
+		};
+	};
+	FA36A16F1219D52F00FCE7BA /* ExtensionSupport.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 474}";
+		};
+	};
+	FA36A1831219D52F00FCE7BA /* Main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {915, 2769}}";
+			sepNavSelRange = "{1019, 0}";
+			sepNavVisRange = "{745, 911}";
+			sepNavWindowFrame = "{{15, 15}, {750, 558}}";
+		};
+	};
+	FA36A1901219D52F00FCE7BA /* ShipClass.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 312}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 418}";
+		};
+	};
+	FA79CBE11220B3CE00A85D92 /* ToggleEngine_Activate.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 260}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 416}";
+		};
+	};
+}

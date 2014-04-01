@@ -1,0 +1,202 @@
+#include "GameClass.h"
+#include "../Solar System Class/SolarSystemClass.h"
+#include "../Matrix.h"
+
+#include <iostream>
+#include <Time.h>
+#include <sstream>
+#include <vector>
+
+
+struct Segment;//forward declaration to prevent dependency erros (and shit)
+struct griddedSystem//each segment of the grid the solar system will be divided into.
+{
+	float x;
+	float y;
+	int ID;
+	Segment* seg;//Which segment of the universe/map it is in.
+};
+
+struct Segment//The universe will be divided up into larger portions, (like quadrants) that consist of multiple
+				//grid objects
+{
+	int ID;//id of this segment
+	std::vector <griddedSystem*> gridObjects;//all of the "grid pieces" that belong to this segment
+};
+//The idea behind this whole segment idea is to have one "government" (for the most part) in control of that whole
+//segment. So we have all of the X planets in one corner, the Y planets in another, etc
+
+void Game::generateUniverse()
+{
+	int solarSystemWidth = 2000, solarSystemHeight = 2000;//The sizes of a solar system
+	int solarSystemBirth = 500;//amount of space between the end of one solar system and another
+
+	int rows = (int)sectorWidth/(solarSystemWidth + solarSystemBirth) - 1;
+	int columns = (int)sectorHeight/(solarSystemHeight + solarSystemBirth) - 1;
+
+	std::cout << rows << std::endl;
+	std::cout << columns << std::endl;
+
+	//The grid that contains all of the solar systems
+	matrix<griddedSystem> grid(rows, columns);
+
+
+	//How many "quadrants" or, bigger chunks of the universe there should be
+	int segmentRows = 3;
+	int segmentColumns = 3;
+	//This^ is really important.
+
+	//generate the governments (one per segment, so rows * columns)
+	//int govAmount = rand()%5 + 4;//Will generate between 4 and 9 governments.
+	int govAmount = segmentRows*segmentColumns;
+	int startingGov = game->government.gov.size();//How many governments are already around.
+	for (int i = 0; i < govAmount; i++)
+	{
+		float temp = (double)1/(segmentRows*segmentColumns);//We make as many colors as there are governments
+		//	so the colors are 0-1 (floats). If there are say...3 rows and 3 columns (9 segments = 9 governments)
+		//	So we need 9 colors. Color 1 = (1/9) * 1, Color 2 = (1/9) *2, Color 3 = (1/9) * 3, Until we get
+		//	(1/9) * 9 = 1 = white
+
+		std::stringstream out;
+		out << government.gov.size()-1;//We'll just make the name of it be the number it is
+		government.gov.push_back (new Government::Gov(out.str()));//Make the new governments...
+		government.gov[i]->r = (i+1) * temp;
+		government.gov[i]->g = (i+1) * temp;
+		government.gov[i]->b = (i+1) * temp;
+	}
+	
+
+	int counter = 0;//number of planets
+
+
+
+	srand(time(NULL));
+	int numberOfSystems = rand()%19 + 10;//A random number of systems will be kept
+	std::vector<int> planetsToKeep(numberOfSystems);//Where the systems to keep are in the array
+	std::vector<SolarSystem::System*> system(numberOfSystems);//We save them to this array
+	
+	//Setup those "segments"/bigger chunks of the universe.
+	matrix<Segment> segment (segmentRows, segmentColumns);//The segments that the universe will be divided up into
+
+	game->solarSystem.system.resize(rows*columns);//Temporary resization is necessary.
+
+	for (unsigned int i = 0; i < planetsToKeep.size(); i++)//Fill the array of random solar systems #'s with random system #
+	{
+		planetsToKeep[i] = rand()%solarSystem.system.size() - 2;//Choose a random solar system that will be kept
+	}
+
+	int placeToSave = 0;
+	for (int i = 0; i < rows; i++)
+	{
+		for (int a = 0; a < columns; a++)
+		{
+
+			grid(i, a).ID = counter;//we set up the ID for the solar system. whether it will be generated is based
+			counter++;				//on this number
+
+			bool generate = false;
+			
+			for (unsigned int x = 0; x < planetsToKeep.size(); x++)
+			{
+				if (counter == planetsToKeep[x])//We check if this is one of the planets to be kept
+				{
+					placeToSave = x;//We're saving it in the same spot
+					generate = true;
+				}
+			}
+
+			if (generate == true)//if so, we generate it. 
+			{
+				//where it would theoretically be in the grid...
+				grid(i, a).x = solarSystemWidth/2 + (i*(solarSystemWidth + solarSystemBirth));
+				grid(i, a).y = solarSystemHeight/2 + (a*(solarSystemHeight + solarSystemBirth));
+				
+				int segCount = 0;//This is to assign ID's to each segment. We just increase it as we add more segs
+				//set up which segment this grid would be in
+				for (int z = 0; z < segment.getWidth(); z++)
+				{
+					for (int y = 0; y < segment.getHeight(); y++)
+					{		
+						segment (z, y).ID = segCount;
+						if (grid(i, a).x > (game->sectorWidth/segment.getWidth())*z && grid(i, a).x < (game->sectorWidth/segment.getWidth())*(z+1))
+						{
+							std::cout << "Check.";
+							if (grid(i, a).y > (game->sectorHeight/segment.getHeight())*y && grid(i, a).y < (game->sectorHeight/segment.getHeight())*(y+1))
+							{
+								std::cout << "Quadrant " << z << " " << y << std::endl;
+								grid(i, a).seg = &segment(z, y);
+								segment(z, y).gridObjects.push_back (&grid(i, a));
+							}
+						}
+						segCount++;
+					}
+				}
+			
+
+				int place = counter - 1;
+				
+				solarSystem.system[place] = new SolarSystem::System();
+				solarSystem.system[place]->planet.push_back (new Planet());
+				
+				
+				#ifdef _WIN32
+					solarSystem.system[place]->sun.init("..//Space Game Engine//Source//Resources//2D//Star.tga", 1);
+					solarSystem.system[place]->planet[0]->init("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+				#endif
+				
+				#ifdef __APPLE__
+					solarSystem.system[place]->sun.init("../../Source/Resources/2D/Star.tga", 1);
+					solarSystem.system[place]->planet[0]->init("../../Source/Resources/2D//Planet.tga", 1);
+				#endif
+
+				#ifdef __linux__
+					solarSystem.system[place]->sun.init("..//Space Game Engine//Source//Resources//2D//Star.tga", 1);
+					solarSystem.system[place]->planet[0]->init("..//Space Game Engine//Source//Resources//2D//Planet.tga", 1);
+				#endif
+
+				//This can all be temporary, or at least also be randomly generated
+				solarSystem.system[place]->sun.xPos = grid(i, a).x - sectorWidth/2;
+				solarSystem.system[place]->sun.yPos = grid(i, a).y - sectorHeight/2;
+				
+				
+				solarSystem.system[place]->planet[0]->xPos = grid(i, a).x - sectorWidth/2;
+				solarSystem.system[place]->planet[0]->yPos = grid(i, a).y - sectorHeight/2;
+				solarSystem.system[place]->planet[0]->rotationSpeed = 0.1;
+				solarSystem.system[place]->planet[0]->partForSale.push_back (game->part.engine[0]);
+				solarSystem.system[place]->planet[0]->partForSale.push_back (game->part.engine[1]);
+				solarSystem.system[place]->planet[0]->partForSale.push_back (game->part.cargoBay[1]);
+				//set the planet up with a random non-player government
+				//int govtChoice = rand()%(government.gov.size()-1) + startingGov;
+				//solarSystem.system[place]->planet[0]->controllingGovernment = government.gov[govtChoice];
+				
+				//Set up this planet with a government
+				int govtChoice;
+				govtChoice = grid(i, a).seg->ID;//We assign the government.
+			
+
+				solarSystem.system[place]->planet[0]->controllingGovernment = government.gov[govtChoice];
+				government.gov[govtChoice]->addPlanet (solarSystem.system[place]->planet[0]);
+
+				system[placeToSave] = solarSystem.system[place];//We save the solar system.
+			}
+
+			generate = false;
+
+		}
+	}
+
+	//If a government ends up with 0 planets (by chance)...delete it
+	for (unsigned int i = 0; i < government.gov.size(); i++)
+	{
+		if (government.gov[i]->planet.size() <= 0)
+		{
+			delete government.gov[i];
+			government.gov.erase (government.gov.begin() + i);
+		}
+	}
+	
+	game->solarSystem.system = system;//And set the global solar system object to the ones that we saved	
+
+	return;
+
+}

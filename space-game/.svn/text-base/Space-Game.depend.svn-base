@@ -1,0 +1,228 @@
+# depslib dependency file v1.0
+1282622393 source:/home/alex/Space-Game/Space Game Engine/Source/Background Star Class/BackgroundStarClass.cpp
+	"BackgroundStarClass.h"
+	"../Game Class/GameClass.h"
+
+1282622393 /home/alex/Space-Game/Space Game Engine/Source/Background Star Class/BackgroundStarClass.h
+
+1282625021 /home/alex/Space-Game/Space Game Engine/Source/Game Class/GameClass.h
+	<vector>
+	<GLUT/GLUT.h>
+	<OpenGL/OpenGL.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<windows.h>
+	<GL/glut.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	"../Space Object Class/SpaceObjectClass.h"
+	"../Player Class/PlayerClass.h"
+	"../Background Star Class/BackgroundStarClass.h"
+	"../Convert Special Keyboard Input/ConvertSpecialKeyboardInputClass.h"
+	"../Solar System Class/SolarSystemClass.h"
+	"../Radar Class/RadarClass.h"
+	"../HUD Class/HUDClass.h"
+
+1262213589 /usr/include/GL/glut.h
+	"freeglut_std.h"
+
+1262213589 /usr/include/GL/freeglut_std.h
+	<Windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1277120508 /usr/include/GL/gl.h
+	"gl_mangle.h"
+	<stdlib.h>
+	<windows.h>
+	<GL/mesa_wgl.h>
+	<GL/glext.h>
+
+1277120508 /usr/include/GL/gl_mangle.h
+
+1281488468 /usr/include/stdlib.h
+	<features.h>
+	<stddef.h>
+	<bits/waitflags.h>
+	<bits/waitstatus.h>
+	<xlocale.h>
+	<sys/types.h>
+	<alloca.h>
+	<bits/stdlib.h>
+	<bits/stdlib-ldbl.h>
+
+1281488458 /usr/include/features.h
+	<sys/cdefs.h>
+	<gnu/stubs.h>
+
+1281488472 /usr/include/sys/cdefs.h
+	<features.h>
+	<bits/wordsize.h>
+
+1281488468 /usr/include/bits/wordsize.h
+
+1281488458 /usr/include/gnu/stubs.h
+	<bits/wordsize.h>
+	<gnu/stubs-32.h>
+	<gnu/stubs-64.h>
+
+1281488484 /usr/include/gnu/stubs-64.h
+
+1281488471 /usr/include/bits/waitflags.h
+
+1281488471 /usr/include/bits/waitstatus.h
+	<endian.h>
+
+1281488469 /usr/include/endian.h
+	<features.h>
+	<bits/endian.h>
+	<bits/byteswap.h>
+
+1281488469 /usr/include/bits/endian.h
+
+1281488469 /usr/include/bits/byteswap.h
+	<bits/wordsize.h>
+
+1281488459 /usr/include/xlocale.h
+
+1281488471 /usr/include/sys/types.h
+	<features.h>
+	<bits/types.h>
+	<time.h>
+	<stddef.h>
+	<endian.h>
+	<sys/select.h>
+	<sys/sysmacros.h>
+	<bits/pthreadtypes.h>
+
+1281488471 /usr/include/bits/types.h
+	<features.h>
+	<bits/wordsize.h>
+	<bits/typesizes.h>
+
+1281488471 /usr/include/bits/typesizes.h
+
+1281488470 /usr/include/time.h
+	<features.h>
+	<stddef.h>
+	<bits/time.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<xlocale.h>
+
+1281488470 /usr/include/bits/time.h
+	<bits/types.h>
+	<bits/types.h>
+
+1281488472 /usr/include/sys/select.h
+	<features.h>
+	<bits/types.h>
+	<bits/select.h>
+	<bits/sigset.h>
+	<time.h>
+	<bits/time.h>
+
+1281488472 /usr/include/bits/select.h
+	<bits/wordsize.h>
+
+1281488468 /usr/include/bits/sigset.h
+
+1281488471 /usr/include/sys/sysmacros.h
+	<features.h>
+
+1281488471 /usr/include/bits/pthreadtypes.h
+	<bits/wordsize.h>
+
+1281488468 /usr/include/alloca.h
+	<features.h>
+	<stddef.h>
+
+1281488468 /usr/include/bits/stdlib.h
+
+1281488468 /usr/include/bits/stdlib-ldbl.h
+
+1277120508 /usr/include/GL/mesa_wgl.h
+	<GL/gl.h>
+	<windows.h>
+
+1277120508 /usr/include/GL/glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1281488468 /usr/include/inttypes.h
+	<features.h>
+	<stdint.h>
+	<stddef.h>
+
+1281488468 /usr/include/stdint.h
+	<features.h>
+	<bits/wchar.h>
+	<bits/wordsize.h>
+
+1281488470 /usr/include/bits/wchar.h
+
+1277120508 /usr/include/GL/glu.h
+	"glu_mangle.h"
+	<GL/gl.h>
+
+1277120508 /usr/include/GL/glu_mangle.h
+
+1282622394 /home/alex/Space-Game/Space Game Engine/Source/Space Object Class/SpaceObjectClass.h
+
+1282622394 /home/alex/Space-Game/Space Game Engine/Source/Player Class/PlayerClass.h
+	"../Ship Class/ShipClass.h"
+
+1282622393 /home/alex/Space-Game/Space Game Engine/Source/Ship Class/ShipClass.h
+	"../Space Object Class/SpaceObjectClass.h"
+
+1282622394 /home/alex/Space-Game/Space Game Engine/Source/Convert Special Keyboard Input/ConvertSpecialKeyboardInputClass.h
+
+1282622394 /home/alex/Space-Game/Space Game Engine/Source/Solar System Class/SolarSystemClass.h
+	<string>
+	<vector>
+	"../Planet Class/PlanetClass.h"
+	"../Star Class/StarClass.h"
+
+1282622393 /home/alex/Space-Game/Space Game Engine/Source/Planet Class/PlanetClass.h
+	"../Space Object Class/SpaceObjectClass.h"
+	<string>
+
+1282622393 /home/alex/Space-Game/Space Game Engine/Source/Star Class/StarClass.h
+	"../Space Object Class/SpaceObjectClass.h"
+
+1282622394 /home/alex/Space-Game/Space Game Engine/Source/Radar Class/RadarClass.h
+	"../Space Object Class/SpaceObjectClass.h"
+	<stdlib.h>
+	<GLUT/GLUT.h>
+	<OpenGL/OpenGL.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glut.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+
+1282622394 /home/alex/Space-Game/Space Game Engine/Source/HUD Class/HUDClass.h
+	"../Space Object Class/SpaceObjectClass.h"
+	"../Radar Class/RadarClass.h"
+	"../Button Class/Toggle Engine Class/ToggleEngineClass.h"
+
+1282622393 /home/alex/Space-Game/Space Game Engine/Source/Button Class/Toggle Engine Class/ToggleEngineClass.h
+	"../ButtonClass.h"
+
+1282622393 /home/alex/Space-Game/Space Game Engine/Source/Button Class/ButtonClass.h
+	"../Space Object Class/SpaceObjectClass.h"
+
